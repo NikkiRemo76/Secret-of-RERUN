@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character y="100" sprite="Majin-2" scale="1.2" icon="majin" color="#000000">
+	<anim name="idle" anim="Majin-2 idle" fps="10" loop="true"/>
+	<anim name="singDOWN" anim="Majin-2 down" fps="10"/>
+	<anim name="singRIGHT" anim="Majin-2 right" fps="10"/>
+	<anim name="singLEFT" anim="Majin-2 left" fps="10"/>
+	<anim name="singUP" anim="Majin-2 up" fps="10"/>
+</character>

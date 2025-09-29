@@ -1,0 +1,14 @@
+{
+	"opponentModeAllowed": true,
+	"icon": "screembo2",
+	"difficulties": [
+		"normal"
+	],
+	"color": "#FF0054",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Smoke and MIrrors",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 170
+}
