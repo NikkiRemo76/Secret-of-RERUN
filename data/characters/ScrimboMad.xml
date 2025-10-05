@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="Hide-and-Seek/mad" icon="screembo" color="#3010A6">
+	<anim name="idle" anim="mad idle" fps="10"/>
+	<anim name="mad one" anim="mad one" fps="10"/>
+	<anim name="mad two" anim="mad two" fps="10"/>
+	<anim name="mad three" anim="mad three" fps="10"/>
+	<anim name="mad four" anim="mad four" fps="10"/>
+	<anim name="mad five" anim="mad five" fps="8"/>
+</character>

@@ -1,0 +1,24 @@
+{
+    "params": [
+        {
+            "name": "Camera",
+            "type": "DropDown('camGame', 'camHUD')",
+            "defaultValue": "camHUD"
+        },
+		{
+            "name": "Time",
+            "type": "Float(0, 99, 1, 2)",
+            "defaultValue": 1.00
+        },
+		{
+            "name": "End Alpha",
+            "type": "Float(0, 99, 1, 2)",
+            "defaultValue": 0.00
+        },
+		{
+            "name": "Ease Type",
+            "type": "String",
+            "defaultValue": "linear"
+        }
+    ]
+}

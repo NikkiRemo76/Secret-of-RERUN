@@ -243,11 +243,9 @@
 			"name": "Sunkyng Arrows"
 		}
 	],
-	"codenameChart": true,
 	"strumLines": [
 		{
 			"keyCount": 4,
-			"position": "dad",
 			"notes": [
 				{
 					"id": 0,
@@ -1882,15 +1880,15 @@
 					"type": 0
 				}
 			],
+			"position": "dad",
+			"visible": true,
+			"type": 0,
 			"characters": [
 				"sunkucute"
-			],
-			"type": 0,
-			"visible": true
+			]
 		},
 		{
 			"keyCount": 4,
-			"position": "boyfriend",
 			"notes": [
 				{
 					"id": 1,
@@ -2716,7 +2714,7 @@
 				},
 				{
 					"id": 2,
-					"sLen": 260.869565217443,
+					"sLen": 260.86956521745,
 					"time": 61956.5217391304,
 					"type": 0
 				},
@@ -3297,23 +3295,33 @@
 					"type": 0
 				}
 			],
-			"characters": [
-				"bf"
+			"visible": true,
+			"strumSpacing": 1,
+			"strumPos": [
+				0,
+				50
 			],
+			"position": "boyfriend",
+			"strumScale": 1,
+			"vocalsSuffix": "",
+			"strumLinePos": 0.75,
 			"type": 1,
-			"visible": true
+			"characters": [
+				"sunkBf"
+			]
 		},
 		{
 			"keyCount": 4,
-			"position": "girlfriend",
 			"notes": [],
+			"position": "girlfriend",
+			"visible": false,
+			"type": 2,
 			"characters": [
 				"gf"
-			],
-			"type": 2,
-			"visible": false
+			]
 		}
 	],
+	"codenameChart": true,
 	"scrollSpeed": 3.1,
 	"chartVersion": "1.6.0",
 	"stage": "stage",

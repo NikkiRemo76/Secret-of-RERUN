@@ -1,0 +1,19 @@
+{
+    "params": [
+        {
+            "name": "Activate?",
+            "type": "Bool",
+            "defaultValue": true
+        },
+        {
+            "name": "Amount of bounce",
+            "type": "String",
+            "defaultValue": "10"
+        },
+        {
+            "name": "Multiplier",
+            "type": "String",
+            "defaultValue": "1"
+        }
+    ]
+}

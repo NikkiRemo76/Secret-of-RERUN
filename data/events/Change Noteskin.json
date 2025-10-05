@@ -1,0 +1,14 @@
+{
+    "params": [
+        {
+            "name": "New Noteskin Path (leave blank for default)",
+            "type": "String",
+            "defaultValue": "im feeling freaky"
+        },
+        {
+            "name": "Strum ID",
+            "type": "Int(0, 99, 1)",
+            "defaultValue": 0
+        }
+    ]
+}

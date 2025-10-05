@@ -1,0 +1,14 @@
+{
+    "params": [
+        {
+            "name": "Instant",
+            "type": "Bool",
+            "defaultValue": true
+        },
+        {
+            "name": "Value",
+            "type": "Float(0,100,1,2)",
+            "defaultValue": 1
+        }
+    ]
+}
