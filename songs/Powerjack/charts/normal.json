@@ -1,31 +1,5 @@
 {
-	"bookmarks": [
-		{
-			"name": "тут начало комикса",
-			"color": "#FFAF00",
-			"time": 1380.28326455271
-		},
-		{
-			"name": "страница 2",
-			"color": "#FF0000",
-			"time": 1388.42215130295
-		},
-		{
-			"name": "хуячит лаземром",
-			"color": "#FF0000",
-			"time": 1391.9534705331
-		},
-		{
-			"name": "замедлние из за большого лазера",
-			"color": "#E2FF00",
-			"time": 1400.23763733302
-		},
-		{
-			"time": 1104.76702641207,
-			"color": "#0002FF",
-			"name": "ДРАЧКА"
-		}
-	],
+	"bookmarks": [],
 	"events": [
 		{
 			"params": [
@@ -669,6 +643,26 @@
 		},
 		{
 			"params": [
+				false,
+				"Elastic",
+				"InOut",
+				"0.5"
+			],
+			"time": 131250,
+			"name": "Cinematics (HUD)"
+		},
+		{
+			"params": [
+				false,
+				"Elastic",
+				"InOut",
+				"0.5"
+			],
+			"time": 131250,
+			"name": "Cinematics (Strums)"
+		},
+		{
+			"params": [
 				0,
 				"singUP-alt",
 				true,
@@ -694,6 +688,17 @@
 			],
 			"time": 132000,
 			"name": "HScript Call"
+		},
+		{
+			"params": [
+				1,
+				true,
+				4,
+				"CLASSIC",
+				"In"
+			],
+			"time": 132375,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -770,6 +775,16 @@
 		},
 		{
 			"params": [
+				true,
+				"Quad",
+				"InOut",
+				"2"
+			],
+			"time": 137250,
+			"name": "Cinematics (Strums)"
+		},
+		{
+			"params": [
 				"tweenColor",
 				"h, 500, 0.5"
 			],
@@ -786,10 +801,43 @@
 		},
 		{
 			"params": [
-				1
+				0,
+				true,
+				4,
+				"CLASSIC",
+				"In"
 			],
-			"name": "Camera Movement",
-			"time": 138750
+			"time": 138750,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				true,
+				"Quad",
+				"InOut",
+				"2"
+			],
+			"name": "Cinematics (HUD)",
+			"time": 141750
+		},
+		{
+			"params": [
+				"sonicFade",
+				""
+			],
+			"name": "HScript Call",
+			"time": 141750
+		},
+		{
+			"params": [
+				1,
+				true,
+				16,
+				"cube",
+				"Out"
+			],
+			"time": 141750,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -797,6 +845,14 @@
 			],
 			"name": "Camera Movement",
 			"time": 144750
+		},
+		{
+			"params": [
+				"cloudFade",
+				""
+			],
+			"time": 150000,
+			"name": "HScript Call"
 		},
 		{
 			"params": [
@@ -835,6 +891,44 @@
 		},
 		{
 			"params": [
+				"tweenColor",
+				"s, -100, 2"
+			],
+			"time": 173250,
+			"name": "HScript Call"
+		},
+		{
+			"params": [
+				"100",
+				"Linear",
+				"InOut",
+				"0.0001"
+			],
+			"time": 174750,
+			"name": "Cinematics (Bar)"
+		},
+		{
+			"params": [
+				false,
+				"Quad",
+				"InOut",
+				"0.00001"
+			],
+			"name": "Cinematics (HUD)",
+			"time": 174750
+		},
+		{
+			"params": [
+				false,
+				"Quad",
+				"InOut",
+				"0.0001"
+			],
+			"name": "Cinematics (Strums)",
+			"time": 174750
+		},
+		{
+			"params": [
 				0
 			],
 			"name": "Camera Movement",
@@ -849,17 +943,103 @@
 		},
 		{
 			"params": [
-				0
+				0,
+				true,
+				4,
+				"CLASSIC",
+				"In"
 			],
 			"name": "Camera Movement",
 			"time": 179250
 		},
 		{
 			"params": [
-				1
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"name": "Camera Flash",
+			"time": 179250
+		},
+		{
+			"params": [
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"time": 179625,
+			"name": "Camera Flash"
+		},
+		{
+			"params": [
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"name": "Camera Flash",
+			"time": 180000
+		},
+		{
+			"params": [
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"time": 180375,
+			"name": "Camera Flash"
+		},
+		{
+			"params": [
+				1,
+				true,
+				4,
+				"CLASSIC",
+				"In"
 			],
 			"name": "Camera Movement",
 			"time": 180750
+		},
+		{
+			"params": [
+				"0",
+				"Quint",
+				"InOut",
+				"5"
+			],
+			"time": 180750,
+			"name": "Cinematics (Bar)"
+		},
+		{
+			"params": [
+				"tweenColor",
+				"s, 0, 5"
+			],
+			"time": 180750,
+			"name": "HScript Call"
+		},
+		{
+			"params": [
+				true,
+				"Quad",
+				"InOut",
+				"5"
+			],
+			"time": 180750,
+			"name": "Cinematics (HUD)"
+		},
+		{
+			"params": [
+				true,
+				"Quad",
+				"InOut",
+				"5"
+			],
+			"time": 180750,
+			"name": "Cinematics (Strums)"
 		},
 		{
 			"params": [
@@ -867,6 +1047,46 @@
 			],
 			"name": "Camera Movement",
 			"time": 182250
+		},
+		{
+			"params": [
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"name": "Camera Flash",
+			"time": 182250
+		},
+		{
+			"params": [
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"time": 182625,
+			"name": "Camera Flash"
+		},
+		{
+			"params": [
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"name": "Camera Flash",
+			"time": 183000
+		},
+		{
+			"params": [
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"time": 183375,
+			"name": "Camera Flash"
 		},
 		{
 			"params": [
@@ -881,6 +1101,46 @@
 			],
 			"name": "Camera Movement",
 			"time": 185250
+		},
+		{
+			"params": [
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"time": 185250,
+			"name": "Camera Flash"
+		},
+		{
+			"params": [
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"name": "Camera Flash",
+			"time": 185625
+		},
+		{
+			"params": [
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"time": 186000,
+			"name": "Camera Flash"
+		},
+		{
+			"params": [
+				false,
+				-65536,
+				4,
+				"camHUD"
+			],
+			"name": "Camera Flash",
+			"time": 186375
 		},
 		{
 			"params": [
@@ -902,6 +1162,36 @@
 			],
 			"name": "Camera Movement",
 			"time": 204750
+		},
+		{
+			"params": [
+				"100",
+				"Linear",
+				"InOut",
+				"0.0001"
+			],
+			"name": "Cinematics (Bar)",
+			"time": 210750
+		},
+		{
+			"params": [
+				false,
+				"Linear",
+				"InOut",
+				"0.00001"
+			],
+			"time": 210750,
+			"name": "Cinematics (HUD)"
+		},
+		{
+			"params": [
+				false,
+				"Linear",
+				"InOut",
+				"0.00001"
+			],
+			"time": 210750,
+			"name": "Cinematics (Strums)"
 		}
 	],
 	"strumLines": [
@@ -7841,7 +8131,7 @@
 				"fwP3"
 			],
 			"type": 0,
-			"visible": true,
+			"visible": false,
 			"strumSpacing": 1,
 			"strumPos": [
 				0,
@@ -7852,6 +8142,8 @@
 		},
 		{
 			"keyCount": 4,
+			"strumScale": 1,
+			"position": "boyfriend",
 			"notes": [
 				{
 					"id": 2,
@@ -10197,6 +10489,12 @@
 					"id": 2,
 					"sLen": 468.75,
 					"time": 90937.5,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 281.25,
+					"time": 91500,
 					"type": 0
 				},
 				{
@@ -13512,38 +13810,36 @@
 					"type": 0
 				}
 			],
+			"characters": [
+				"sonicPJ",
+				"sFight",
+				"sunkBf"
+			],
+			"type": 1,
 			"visible": true,
 			"strumSpacing": 1,
 			"strumPos": [
 				0,
 				50
 			],
-			"position": "boyfriend",
-			"strumScale": 1,
-			"vocalsSuffix": "",
 			"strumLinePos": 0.75,
-			"type": 1,
-			"characters": [
-				"sonicPJ",
-				"sFight",
-				"sunkBf"
-			]
+			"vocalsSuffix": ""
 		},
 		{
 			"keyCount": 4,
-			"notes": [],
 			"position": "girlfriend",
-			"type": 2,
-			"visible": false,
+			"notes": [],
 			"characters": [
 				"nogf"
-			]
+			],
+			"visible": false,
+			"type": 2
 		}
 	],
 	"codenameChart": true,
 	"stage": "fleatway",
-	"chartVersion": "1.6.0",
 	"scrollSpeed": 3.2,
+	"chartVersion": "1.6.0",
 	"noteTypes": [
 		"Alt Anim Note",
 		"No Anim Note"

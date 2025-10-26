@@ -12,6 +12,12 @@ colorShader.hue = 0;
 colorShader.contrast = 0;
 colorShader.saturation = 0;
 
+var colorTween:FlxTween;
+var cloudTween:FlxTween;
+var sonicTween:FlxTween;
+
+var camComic:FlxCamera = new FlxCamera();
+
 function onNoteCreation(e)
     e.noteSprite = 'game/notes/NOTE_ASSETS'; // replaces default noteskin
 
@@ -40,8 +46,18 @@ function postCreate() {
 
 	camGame.addShader(colorShader);
 
+	//FlxG.cameras.add(camComic, false);
+	
+    camComic.bgColor = new FlxColor(0x00000000);
+	
+	FlxG.cameras.remove(camHUD, false);
+	FlxG.cameras.add(camComic, false);
+	FlxG.cameras.add(camHUD, false);
+
 	strumLines.members[0].characters[1].y = strumLines.members[1].characters[1].y;
 	strumLines.members[1].characters[1].x -= 300;
+
+	strumLines.members[2].characters[0].visible = false;
 
 	gradi = FlxGradient.createGradientFlxSprite(1280, 1080, [FlxColor.TRANSPARENT, FlxColor.WHITE]);
 	gradi.x = -12;
@@ -62,24 +78,48 @@ function postCreate() {
 	gradiRender.zoomFactor = 0;
 	insert(members.indexOf(smoke), gradiRender);
 
-	comixbg = new FlxSprite(0,0);
-	comixbg.makeGraphic(1280, 720, FlxColor.WHITE);
-	comixbg.updateHitbox();
-    comixbg.screenCenter();
-	comixbg.color = 0xe3c4ca;
-    comixbg.scale.set(2, 2);
-	comixbg.camera = camHUD;
-	comixbg.visible = false;
-	insert(members.indexOf(gf), comixbg);
+	comicbg = new FlxSprite(0,0);
+	comicbg.makeGraphic(1280, 720, FlxColor.WHITE);
+	comicbg.color = 0xe3c4ca;
+    comicbg.scale.set(2, 2);
+	comicbg.camera = camComic;
+	comicbg.visible = false;
+	comicbg.scrollFactor(0,0);
+	comicbg.updateHitbox();
+    comicbg.screenCenter();
+	insert(members.indexOf(gf), comicbg);
 
-	comix = new FlxSprite().loadGraphic(Paths.image('stages/fleatway/comix'));
-    //comix.scale.set(0.8,0.8);
-    comix.updateHitbox();
-    comix.screenCenter();
-    comix.camera = camHUD;
-	comix.visible = false;
-	comix.antialiasing = true;
-    insert(members.indexOf(gf), comix);
+	comic1 = new FlxSprite().loadGraphic(Paths.image('stages/fleatway/comic/comic1'));
+    comic1.updateHitbox();
+    comic1.screenCenter();
+    comic1.camera = camComic;
+	comic1.visible = false;
+	comic1.antialiasing = true;
+    insert(members.indexOf(gf), comic1);
+
+	comic3 = new FlxSprite().loadGraphic(Paths.image('stages/fleatway/comic/comic3'));
+    comic3.updateHitbox();
+    comic3.screenCenter();
+    comic3.camera = camComic;
+	comic3.visible = false;
+	comic3.antialiasing = true;
+    insert(members.indexOf(gf), comic3);
+
+	comic2 = new FlxSprite().loadGraphic(Paths.image('stages/fleatway/comic/comic2'));
+    comic2.updateHitbox();
+    comic2.screenCenter();
+    comic2.camera = camComic;
+	comic2.visible = false;
+	comic2.antialiasing = true;
+    insert(members.indexOf(gf), comic2);
+
+	comic = new FlxSprite().loadGraphic(Paths.image('stages/fleatway/comic/comic'));
+    comic.updateHitbox();
+    comic.screenCenter();
+    comic.camera = camComic;
+	comic.visible = false;
+	comic.antialiasing = true;
+    insert(members.indexOf(gf), comic);
 }
 
 function bgChange(values) {
@@ -90,6 +130,7 @@ function bgChange(values) {
 			strumLines.members[0].characters[1].visible = false;
 			strumLines.members[1].characters[1].visible = false;
 			strumLines.members[0].characters[2].visible = false;
+			strumLines.members[1].characters[2].visible = false;
 			opponentZoom = 1;
 			playerZoom = 0.5;
 			zoomAllow = true;
@@ -105,12 +146,14 @@ function bgChange(values) {
 			skyp3.visible = false;
 			fog.visible = false;
 			stagep3.visible = false;
+			cloud.visible = false;
 		case '2': 
 			strumLines.members[0].characters[0].visible = false;
 			strumLines.members[1].characters[0].visible = false;
 			strumLines.members[0].characters[1].visible = true;
 			strumLines.members[1].characters[1].visible = true;
 			strumLines.members[0].characters[2].visible = false;
+			strumLines.members[1].characters[2].visible = false;
 			zoomAllow = false;
 			sky.visible = false;
 			bg1.visible = false;
@@ -124,14 +167,22 @@ function bgChange(values) {
 			skyp3.visible = false;
 			fog.visible = false;
 			stagep3.visible = false;
+			cloud.visible = false;
 		case '3': 
 			strumLines.members[0].characters[0].visible = false;
 			strumLines.members[1].characters[0].visible = false;
 			strumLines.members[0].characters[1].visible = false;
 			strumLines.members[1].characters[1].visible = false;
 			strumLines.members[0].characters[2].visible = true;
-			opponentZoom = 0.5;
-			playerZoom = 1;
+			strumLines.members[1].characters[2].visible = true;
+			remove(strumLines.members[1].characters[2]);
+			insert(members.indexOf(strumLines.members[0].characters[2]), strumLines.members[1].characters[2]);
+			remove(cloud);
+			insert(members.indexOf(strumLines.members[1].characters[2]), cloud);
+			strumLines.members[0].characters[2].zoomFactor = 0.8;
+			strumLines.members[1].characters[2].color = 0x000000;
+			opponentZoom = 0.4;
+			playerZoom = 0.8;
 			zoomAllow = true;
 			sky.visible = false;
 			bg1.visible = false;
@@ -145,7 +196,27 @@ function bgChange(values) {
 			skyp3.visible = true;
 			fog.visible = true;
 			stagep3.visible = true;
+			cloud.visible = true;
+			strumLines.members[1].characters[2].alpha = 0;
 	}
+}
+
+function sonicFade(){
+	sonicTween = FlxTween.tween(strumLines.members[1].characters[2], {alpha: 1}, 2, {ease: FlxEase.cubeOut, onComplete: function(_){
+    	cloudTween = null;
+    }});
+}
+
+function cloudFade(){
+	colorTween = FlxTween.color(strumLines.members[1].characters[2], 2, 0xff000000, 0xffffffff, {ease: FlxEase.cubeOut, 
+		onComplete: function(twn:FlxTween) {
+			colorTween = null;
+		}
+	});
+	cloudTween = FlxTween.tween(cloud, {alpha: 0}, 2, {ease: FlxEase.cubeOut, 
+		onComplete: function(_){
+    	cloudTween = null;
+    }});
 }
 
 var brightnessBlock = false;
@@ -224,17 +295,33 @@ function stepHit(curStep:Int) {
 	switch (curStep) {
 		case 16:
 			camGame.alpha = 1;
-        case 1380: 
-            comix.visible = true;
-			comixbg.visible = true;
-			FlxTween.tween(comix, {x: 0, y: -100},0.5, {ease: FlxEase.cubeOut});
-		case 1388: 
-			FlxTween.tween(comix, {x: 300, y: -800, 'scale.x': 1.2, 'scale.y': 1.2},0.4, {ease: FlxEase.cubeOut});
-		case 1392: 
-			FlxTween.tween(comix, {x: -1100, y: -100, 'scale.x': 1, 'scale.y': 1},0.5, {ease: FlxEase.cubeOut});
-		case 1400: 
-			FlxTween.tween(comix, {x: -800, y: -800, 'scale.x': 0.8, 'scale.y': 0.8},0.5, {ease: FlxEase.cubeOut});
-			FlxTween.tween(comix, {alpha: 0},1.5, {ease: FlxEase.cubeOut});
-			FlxTween.tween(comixbg, {alpha: 0},1.5, {ease: FlxEase.cubeOut});
+        case 1416: 
+            comic.visible = true;
+			comic1.visible = true;
+			comic2.visible = true;
+			comic3.visible = true;
+			comicbg.visible = true;
+			comicbg.setPosition(0,0);
+			comic.setPosition(0,0);
+			comic1.setPosition(0,0);
+			comic2.setPosition(0,0);
+			comic3.setPosition(0,0);
+			comic2.alpha = 0;
+			FlxTween.tween(comic2, {alpha: 1}, 2, {ease: FlxEase.cubeOut});
+			FlxTween.tween(camComic.scroll, {x: 0, y: 100},0.5, {ease: FlxEase.cubeOut});
+		case 1448: 
+			FlxTween.tween(camComic.scroll, {x: 1100, y: 100},0.5, {ease: FlxEase.cubeOut});
+		case 1472: 
+			FlxTween.tween(camComic.scroll, {x: 0, y: 800},0.5, {ease: FlxEase.cubeOut});
+		case 1480: 
+			FlxTween.tween(camComic.scroll, {x: 800, y: 800},0.5, {ease: FlxEase.cubeOut});
+		case 1496: 
+			FlxTween.tween(camComic.scroll, {x: 500, y: 1750},0.5, {ease: FlxEase.cubeOut});
+			FlxTween.tween(camComic, {zoom: 0.6},0.5, {ease: FlxEase.cubeOut});
+		case 1512: 
+			FlxTween.tween(camComic, {zoom: 5}, 4, {ease: FlxEase.cubeOut});
+			FlxTween.tween(comic1, {alpha: 0}, 0.5, {ease: FlxEase.cubeOut});
+			FlxTween.tween(comic2, {alpha: 0}, 0.5, {ease: FlxEase.cubeOut});
+			FlxTween.tween(comic3, {alpha: 0}, 0.5, {ease: FlxEase.cubeOut});
     }
 }

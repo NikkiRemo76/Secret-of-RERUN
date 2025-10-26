@@ -11,6 +11,7 @@
 	<sprite x="975" sprite="stagep3" y="706" type="none" scale="2" name="stagep3"/>
 	<girlfriend x="1385" y="1575"/>
 	<dad x="1471" y="580"/>
+	<sprite x="1311" sprite="cloud" y="-909" type="none" name="cloud"/>
 	<boyfriend x="2333" y="940"/>
 	<sprite x="1049" scroll="1.2" sprite="powerjack-smoke" y="867" scale="1.5" name="smoke"/>
 	<sprite x="637" scroll="1.4" sprite="1" y="373" type="none" name="bg5"/>
