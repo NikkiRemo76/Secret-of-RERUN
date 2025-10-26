@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menuAssets.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="exit0000" x="11" y="11" width="266" height="85" frameX="-164" frameY="-24" frameWidth="502" frameHeight="132"/>
+	<SubTexture name="exit0001" x="288" y="11" width="502" height="132"/>
+	<SubTexture name="retry0000" x="11" y="154" width="371" height="85" frameX="-110" frameY="-25" frameWidth="502" frameHeight="132"/>
+	<SubTexture name="retry0001" x="393" y="154" width="502" height="132"/>
+</TextureAtlas>

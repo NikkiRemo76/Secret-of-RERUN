@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="spookykidsdance.png">
+<SubTexture name="idle0000" x="0" y="0" width="413" height="257" frameX="-110" frameY="-47" frameWidth="620" frameHeight="349" />
+<SubTexture name="idle0001" x="0" y="257" width="375" height="237" frameX="-129" frameY="-67" frameWidth="620" frameHeight="349" />
+<SubTexture name="idle0002" x="413" y="0" width="428" height="257" frameX="-108" frameY="-47" frameWidth="620" frameHeight="349" />
+<SubTexture name="idle0003" x="375" y="257" width="391" height="237" frameX="-128" frameY="-67" frameWidth="620" frameHeight="349" />
+</TextureAtlas>

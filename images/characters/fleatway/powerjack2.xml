@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="powerjack2.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="powerjack idle0000" x="1288" y="728" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0001" x="1288" y="364" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0002" x="0" y="1456" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0003" x="0" y="1092" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0004" x="2576" y="364" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0005" x="644" y="728" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0006" x="644" y="364" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0007" x="0" y="364" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0008" x="644" y="1092" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0009" x="2576" y="728" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0010" x="1932" y="728" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0011" x="0" y="728" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0012" x="644" y="1456" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0013" x="1932" y="1820" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0014" x="644" y="1820" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0015" x="2576" y="1092" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack idle0016" x="2576" y="1456" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack right0000" x="1288" y="0" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack right0001" x="1932" y="1456" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack right0002" x="0" y="2184" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack right0003" x="1932" y="1092" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack down0000" x="1288" y="1820" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack down0001" x="1288" y="1092" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack down0002" x="1932" y="2184" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack down0003" x="0" y="1820" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack up0000" x="1932" y="0" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack up0001" x="644" y="2184" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack up0002" x="1288" y="2184" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack up0003" x="644" y="0" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack left0000" x="1932" y="364" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack left0001" x="0" y="0" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack left0002" x="1288" y="1456" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="powerjack left0003" x="2576" y="0" width="644" height="364" frameX="2" frameY="2" frameWidth="640" frameHeight="360"/>
+</TextureAtlas>

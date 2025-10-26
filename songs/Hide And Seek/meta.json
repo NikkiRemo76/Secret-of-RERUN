@@ -1,0 +1,15 @@
+{
+	"customValues": {},
+	"color": "#5900FF",
+	"opponentModeAllowed": false,
+	"icon": "screembo",
+	"difficulties": [
+		"normal"
+	],
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Hide and Seek",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 128
+}

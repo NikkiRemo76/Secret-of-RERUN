@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character y="150" sprite="reroy/reroy1" scale="0.5" antialiasing="false" color="#FF6300">
+	<anim name="idle" anim="idle" loop="true"/>
+	<anim name="singDOWN" anim="down" x="65" y="-160"/>
+	<anim name="singRIGHT" anim="right" x="-180"/>
+	<anim name="singLEFT" anim="left" x="245" y="-35"/>
+	<anim name="singUP" anim="up" x="115" y="80"/>
+</character>

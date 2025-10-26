@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="fleatway/FLEETWAY3" scale="2" camx="-850" camy="-150" icon="fleatway" color="#F3882D">
+	<anim name="idle" anim="idle" fps="10"/>
+	<anim name="singDOWN" anim="down" fps="15"/>
+	<anim name="singRIGHT" anim="right" fps="15"/>
+	<anim name="singLEFT" anim="left" fps="15"/>
+	<anim name="singUP" anim="up" fps="15"/>
+</character>

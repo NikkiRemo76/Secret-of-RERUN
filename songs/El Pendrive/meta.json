@@ -1,0 +1,16 @@
+{
+	"customValues": {},
+	"color": "#000110",
+	"opponentModeAllowed": true,
+	"icon": "pendrive",
+	"difficulties": [
+		"",
+		"normal"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "El Pendrive",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 160
+}

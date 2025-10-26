@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="h&amp;s_BG_assets.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="bird0000" x="2376" y="1141" width="326" height="299" frameX="-1861" frameY="-540" frameWidth="3840" frameHeight="2160"/>
+	<SubTexture name="jeremias0000" x="0" y="1295" width="1700" height="483" frameX="-1268" frameY="-661" frameWidth="3840" frameHeight="2160"/>
+	<SubTexture name="left tree0000" x="2376" y="0" width="705" height="1141" frameX="-100" frameY="-787" frameWidth="3840" frameHeight="2160"/>
+	<SubTexture name="right tree0000" x="866" y="0" width="754" height="1293" frameX="-3047" frameY="-671" frameWidth="3840" frameHeight="2160"/>
+	<SubTexture name="mid tree0000" x="1620" y="0" width="756" height="1171" frameX="-1661" frameY="-725" frameWidth="3840" frameHeight="2160"/>
+	<SubTexture name="back left tree0000" x="0" y="0" width="866" height="1295" frameX="-225" frameY="-789" frameWidth="3840" frameHeight="2160"/>
+</TextureAtlas>

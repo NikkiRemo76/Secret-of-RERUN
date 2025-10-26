@@ -1,0 +1,15 @@
+{
+	"customValues": {},
+	"color": "#FFAF00",
+	"opponentModeAllowed": false,
+	"difficulties": [
+		"normal"
+	],
+	"icon": "fleatway",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Powerjack",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 160
+}

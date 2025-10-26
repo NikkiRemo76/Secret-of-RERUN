@@ -1,0 +1,18 @@
+<!DOCTYPE codename-engine-character>
+<character camx="-100" icon="spooky" sprite="stranger/Skid" y="200" camy="-80" color="#FFD883" flipX="true" isPlayer="true">
+	<anim anim="Skid DanceUp" name="danceLeft"/>
+
+	<anim anim="Skid DanceDown" name="danceRight"/>
+
+	<anim anim="Skid Down" name="singDOWN"/>
+
+	<anim anim="Skid Right" name="singRIGHT"/>
+
+	<anim anim="Skid Left" name="singLEFT"/>
+
+	<anim anim="Skid Up" name="singUP"/>
+
+	<anim anim="Skid Hey" name="Skid Hey"/>
+
+	<anim loop="true" anim="Skid dance" name="dance"/>
+</character>

@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character x="-500" y="150" sprite="fleatway/SonicPowerJack" flipX="true" camx="-50" camy="30" isPlayer="true" icon="osr" color="#1C00FF" scale="1.4">
+	<anim name="idle" anim="idle" fps="10"/>
+	<anim name="singDOWN" anim="down0"/>
+	<anim name="singRIGHT" anim="left0"/>
+	<anim name="singLEFT" anim="right0"/>
+	<anim name="singUP" anim="up0"/>
+	<anim name="singDOWNmiss" anim="down_"/>
+	<anim name="singRIGHTmiss" anim="left_"/>
+	<anim name="singLEFTmiss" anim="right_"/>
+	<anim name="singUPmiss" anim="up_"/>
+</character>

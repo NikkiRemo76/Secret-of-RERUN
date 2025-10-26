@@ -1,0 +1,18 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/fleatway/" name="fleatway">
+	<sprite x="-826" scroll="0.4" sprite="sky" y="-419" type="none" name="sky"/>
+	<sprite x="-676" scroll="0.5" sprite="5" y="-352" type="none" name="bg1"/>
+	<sprite x="-411" scroll="0.7" sprite="4" y="-247" type="none" name="bg2"/>
+	<sprite type="none" scroll="0.9" sprite="3" name="bg3"/>
+	<sprite type="none" sprite="2" name="bg4"/>
+	<sprite x="-200" scroll="0.8" sprite="grrggrgrtdsf" y="30" type="none" scale="0.5" name="bgFight"/>
+	<sprite x="-108" scroll="0.4" sprite="skyp3" y="227" type="none" scale="2" name="skyp3"/>
+	<sprite x="616" scroll="0.8" sprite="fog" y="609" type="none" scale="2" name="fog"/>
+	<sprite x="975" sprite="stagep3" y="706" type="none" scale="2" name="stagep3"/>
+	<girlfriend x="1385" y="1575"/>
+	<dad x="1471" y="580"/>
+	<boyfriend x="2333" y="940"/>
+	<sprite x="1049" scroll="1.2" sprite="powerjack-smoke" y="867" scale="1.5" name="smoke"/>
+	<sprite x="637" scroll="1.4" sprite="1" y="373" type="none" name="bg5"/>
+	<sprite x="470" scroll="1.2" sprite="grrggrrxkl" y="250" type="none" scale="0.5" name="fg2"/>
+</stage>

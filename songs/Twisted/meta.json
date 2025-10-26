@@ -1,0 +1,15 @@
+{
+	"opponentModeAllowed": true,
+	"icon": "shTails",
+	"difficulties": [
+		"",
+		"normal"
+	],
+	"color": "#CA9C60",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Twisted",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 100
+}

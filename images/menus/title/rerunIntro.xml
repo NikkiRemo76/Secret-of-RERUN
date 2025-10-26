@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rerunIntro.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="introRerun0000" x="3450" y="1363" width="395" height="655" frameX="-450" frameY="-199" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0001" x="3450" y="693" width="474" height="670" frameX="-389" frameY="-212" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0002" x="3450" y="0" width="475" height="693" frameX="-375" frameY="-194" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0003" x="658" y="2104" width="512" height="626" frameX="-356" frameY="-205" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0004" x="522" y="2770" width="518" height="668" frameX="-363" frameY="-230" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0005" x="0" y="2770" width="522" height="669" frameX="-361" frameY="-230" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0006" x="0" y="2104" width="658" height="666" frameX="-372" frameY="-209" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0007" x="2438" y="1101" width="756" height="580" frameX="-409" frameY="-266" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0008" x="2438" y="569" width="849" height="532" frameX="-387" frameY="-175" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0009" x="2438" y="0" width="1012" height="569" frameX="-410" frameY="-194" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0010" x="0" y="1040" width="1117" height="553" frameX="-411" frameY="-246" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0011" x="1199" y="1593" width="1135" height="509" frameX="-410" frameY="-246" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0012" x="1214" y="0" width="1224" height="517" frameX="-415" frameY="-246" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0013" x="0" y="0" width="1214" height="529" frameX="-415" frameY="-246" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0014" x="1117" y="1040" width="1214" height="508" frameX="-415" frameY="-246" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0015" x="0" y="1593" width="1199" height="511" frameX="-415" frameY="-246" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0016" x="1215" y="529" width="1211" height="511" frameX="-415" frameY="-246" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="introRerun0017" x="0" y="529" width="1215" height="511" frameX="-415" frameY="-246" frameWidth="1920" frameHeight="1080"/>
+</TextureAtlas>

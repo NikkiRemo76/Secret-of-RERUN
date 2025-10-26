@@ -1,0 +1,18 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/scrimbo/" name="hasStage">
+	<sprite scrolly="1.05" x="-3840" sprite="3bg" y="-2238" type="none" scale="0.35" scrollx="0.95" name="3bg"/>
+	<sprite x="226" sprite="monkey" y="-267" type="loop" scale="0.5" name="monkey" flipX="true">
+		<anim name="ezgif" anim="ezgif" loop="true" fpc="10"/>
+	</sprite>
+	<sprite x="-553" sprite="bird" y="-164" type="loop" scale="0.7" name="bird" flipX="true">
+		<anim name="ezgif" anim="ezgif" loop="true"/>
+	</sprite>
+	<sprite x="-3831" sprite="2bg" y="-2242" type="none" scale="0.35" name="2bg"/>
+	<sprite x="1427" sprite="pig" y="-91" type="loop" scale="3.45" name="pig">
+		<anim name="ezgif" anim="ezgif" loop="true"/>
+	</sprite>
+	<girlfriend x="236" y="-40"/>
+	<dad camxoffset="200" x="-437" y="-119"/>
+	<boyfriend camxoffset="100" x="455" camyoffset="100" y="-128"/>
+	<sprite x="-3873" scroll="1.2" sprite="1bg" y="-349" type="none" scale="0.35" name="1bg"/>
+</stage>
