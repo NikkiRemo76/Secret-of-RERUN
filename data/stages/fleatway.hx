@@ -142,6 +142,7 @@ function bgChange(values) {
 			fog.visible = false;
 			stagep3.visible = false;
 			cloud.visible = false;
+			pissaura.visible = false;
 		case '2': 
 			strumLines.members[0].characters[0].visible = false;
 			strumLines.members[1].characters[0].visible = false;
@@ -163,6 +164,7 @@ function bgChange(values) {
 			fog.visible = false;
 			stagep3.visible = false;
 			cloud.visible = false;
+			pissaura.visible = false;
 		case '3': 
 			strumLines.members[0].characters[0].visible = false;
 			strumLines.members[1].characters[0].visible = false;
@@ -196,6 +198,7 @@ function bgChange(values) {
 			fog.visible = true;
 			stagep3.visible = true;
 			cloud.visible = true;
+			pissaura.visible = true;
 			strumLines.members[1].characters[2].alpha = 0;
 	}
 }
