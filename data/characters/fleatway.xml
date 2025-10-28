@@ -1,6 +1,6 @@
 <!DOCTYPE codename-engine-character>
-<character x="20" y="310" sprite="fleatway/fleetway" scale="1.5" camx="-510" camy="-20" color="#F3882D">
-	<anim name="idle" anim="idle" fps="15" loop="false"/>
+<character x="20" y="310" sprite="fleatway/fleetway" scale="1.5" camx="-510" camy="-20" color="#F3882D" noteSkin="NOTE_assets_RerunsaF">
+	<anim name="idle" anim="idle" fps="15"/>
 	<anim name="singDOWN" anim="down" fps="15"/>
 	<anim name="singRIGHT" anim="right" fps="15"/>
 	<anim name="singLEFT" anim="left" fps="15"/>

@@ -18,11 +18,6 @@ var sonicTween:FlxTween;
 
 var camComic:FlxCamera = new FlxCamera();
 
-function onNoteCreation(e)
-    e.noteSprite = 'game/notes/NOTE_ASSETS'; // replaces default noteskin
-
-function onStrumCreation(e)
-    e.sprite = 'game/notes/NOTE_ASSETS'; // same as above
 
 //function onPlayerHit(e)
 //{
@@ -180,6 +175,10 @@ function bgChange(values) {
 			remove(cloud);
 			insert(members.indexOf(strumLines.members[1].characters[2]), cloud);
 			strumLines.members[0].characters[2].zoomFactor = 0.8;
+			pissaura.zoomFactor = 0.8;
+			remove(pissaura);
+			insert(members.indexOf(strumLines.members[0].characters[2]), pissaura);
+			pissaura.blend = 0;
 			strumLines.members[1].characters[2].color = 0x000000;
 			opponentZoom = 0.4;
 			playerZoom = 0.8;

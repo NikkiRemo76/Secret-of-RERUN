@@ -1194,11 +1194,11 @@
 			"name": "Cinematics (Strums)"
 		}
 	],
+	"codenameChart": true,
+	"stage": "fleatway",
 	"strumLines": [
 		{
 			"keyCount": 4,
-			"strumScale": 1,
-			"position": "dad",
 			"notes": [
 				{
 					"id": 2,
@@ -8125,20 +8125,22 @@
 					"type": 0
 				}
 			],
-			"characters": [
-				"fleatway",
-				"fwFight",
-				"fwP3"
-			],
-			"type": 0,
-			"visible": false,
+			"visible": true,
 			"strumSpacing": 1,
 			"strumPos": [
 				0,
 				50
 			],
+			"position": "dad",
+			"strumScale": 1,
+			"vocalsSuffix": "",
 			"strumLinePos": 0.25,
-			"vocalsSuffix": ""
+			"type": 0,
+			"characters": [
+				"fleatway",
+				"fwFight",
+				"fwP3"
+			]
 		},
 		{
 			"keyCount": 4,
@@ -13836,8 +13838,6 @@
 			"type": 2
 		}
 	],
-	"codenameChart": true,
-	"stage": "fleatway",
 	"scrollSpeed": 3.2,
 	"chartVersion": "1.6.0",
 	"noteTypes": [

@@ -10,6 +10,9 @@
 	<sprite x="616" scroll="0.8" sprite="fog" y="609" type="none" scale="2" name="fog"/>
 	<sprite x="975" sprite="stagep3" y="706" type="none" scale="2" name="stagep3"/>
 	<girlfriend x="1385" y="1575"/>
+	<sprite x="1232" sprite="Pissaura" y="843" type="loop" scale="2.8" name="pissaura">
+		<anim name="piss" anim="Piss" loop="true" fpc="10"/>
+	</sprite>
 	<dad x="1471" y="580"/>
 	<sprite x="1311" sprite="cloud" y="-909" type="none" name="cloud"/>
 	<boyfriend x="2333" y="940"/>

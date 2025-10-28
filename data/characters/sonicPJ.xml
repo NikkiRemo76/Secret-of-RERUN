@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character x="-500" y="150" sprite="fleatway/SonicPowerJack" flipX="true" camx="-50" camy="30" isPlayer="true" icon="osr" color="#1C00FF" scale="1.4">
+<character x="-500" y="150" sprite="fleatway/SonicPowerJack" scale="1.4" flipX="true" camx="-50" camy="30" isPlayer="true" icon="osr" color="#1B00FF" noteSkin="NOTE_assets_SRerunsa">
 	<anim name="idle" anim="idle" fps="10"/>
 	<anim name="singDOWN" anim="down0"/>
 	<anim name="singRIGHT" anim="left0"/>

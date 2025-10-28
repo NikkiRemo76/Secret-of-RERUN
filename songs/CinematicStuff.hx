@@ -22,6 +22,7 @@ function create() {
 var barTweens:Map<String, FlxTween> = [];
 var strumsTweens:Map<String, FlxTween> = [];
 var hudTweens:Map<String, FlxTween> = [];
+public var strumOpasity;
 function onEvent(_) {
     if (_.event.name == "Cinematics (Bar)") {
         if (barTweens.exists("CinematicBarTop")) {
@@ -77,6 +78,7 @@ function onEvent(_) {
             default: Reflect.field(FlxEase, _.event.params[1].toLowerCase() + _.event.params[2]);
         };
         var opacity:Float = _.event.params[0] ? 1 : 0;
+        strumOpasity = opacity;
         for (id => s in strumLines.members) {
             for (i in 0...4) {
                 var strum = s.members[i];
