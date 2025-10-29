@@ -43,7 +43,7 @@ function postCreate() {
 	bgChange('1');
 
 	camGame.addShader(colorShader);
-	camHUD.addShader(colorShader);
+	//camHUD.addShader(colorShader);
 	camComic.addShader(colorShader);
 
 	//FlxG.cameras.add(camComic, false);

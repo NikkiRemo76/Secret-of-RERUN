@@ -1,8 +1,8 @@
 function onCameraMove(_){
     //trace(curCameraTarget);
+    mainAlpha = strumOpasity != null ? strumOpasity : 1;
 }
 var mainAlpha = strumOpasity != null ? strumOpasity : 1;
-
 function update(elapsed:Float) {
     if (curCameraTarget == 1) {
         for (strum in strumLines.members[0].members) {
