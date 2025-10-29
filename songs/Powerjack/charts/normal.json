@@ -1194,11 +1194,11 @@
 			"name": "Cinematics (Strums)"
 		}
 	],
-	"codenameChart": true,
-	"stage": "fleatway",
 	"strumLines": [
 		{
 			"keyCount": 4,
+			"strumScale": 1,
+			"position": "dad",
 			"notes": [
 				{
 					"id": 2,
@@ -8125,27 +8125,23 @@
 					"type": 0
 				}
 			],
+			"characters": [
+				"fleatway",
+				"fwFight",
+				"fwP3"
+			],
+			"type": 0,
 			"visible": true,
 			"strumSpacing": 1,
 			"strumPos": [
 				0,
 				50
 			],
-			"position": "dad",
-			"strumScale": 1,
-			"vocalsSuffix": "",
 			"strumLinePos": 0.25,
-			"type": 0,
-			"characters": [
-				"fleatway",
-				"fwFight",
-				"fwP3"
-			]
+			"vocalsSuffix": ""
 		},
 		{
 			"keyCount": 4,
-			"strumScale": 1,
-			"position": "boyfriend",
 			"notes": [
 				{
 					"id": 2,
@@ -13812,34 +13808,38 @@
 					"type": 0
 				}
 			],
-			"characters": [
-				"sonicPJ",
-				"sFight",
-				"sunkBf"
-			],
-			"type": 1,
 			"visible": true,
 			"strumSpacing": 1,
 			"strumPos": [
 				0,
 				50
 			],
+			"position": "boyfriend",
+			"strumScale": 1,
+			"vocalsSuffix": "",
 			"strumLinePos": 0.75,
-			"vocalsSuffix": ""
+			"type": 1,
+			"characters": [
+				"sonicPJ",
+				"sFight",
+				"sonicp3"
+			]
 		},
 		{
 			"keyCount": 4,
-			"position": "girlfriend",
 			"notes": [],
+			"position": "girlfriend",
+			"type": 2,
+			"visible": false,
 			"characters": [
 				"nogf"
-			],
-			"visible": false,
-			"type": 2
+			]
 		}
 	],
-	"scrollSpeed": 3.2,
+	"codenameChart": true,
+	"stage": "fleatway",
 	"chartVersion": "1.6.0",
+	"scrollSpeed": 3.2,
 	"noteTypes": [
 		"Alt Anim Note",
 		"No Anim Note"

@@ -17,7 +17,7 @@ var blackboxUp = new FlxSprite();
 
 var texts:Array = [];
 
-var grpMenuShit:FlxTypedGroup<Alphabet>;
+var grpMenuShit:FlxTypedGroup;
 var pitchSound;
 
 //var aaaa = ['Resume', 'Options', 'Credits', 'Exit', "Exit to charter"];
@@ -109,8 +109,10 @@ function create(event) {
 		}else{
 			textaaaaaa.loadGraphic(Paths.image('menus/pause/' + songName + '/buttons/' + e)); // Замените на свой спрайт
 		}
+		textaaaaaa.ID = e;
 		grpMenuShit.add(textaaaaaa);
 		texts.push(textaaaaaa);
+
 		i++;
 	}
 
@@ -231,10 +233,15 @@ function changeSelection(change){
 
 	if (curSelected < 0) curSelected = menuItems.length - 1;
 	if (curSelected >= menuItems.length) curSelected = 0;
-
+	//pauseCam.flash(0xff0000, 1);
 	//for(numbers in menuItems.length){
 	//	numbers[curSelected].color = 0xff0000;
 	//}
 	//trace(curSelected);
 	//trace(menuItems.length);
+	grpMenuShit.forEach(function(spr:FlxSprite)
+	{
+		spr.x = 0;
+		grpMenuShit.members[curSelected].x = 30;
+	});
 }

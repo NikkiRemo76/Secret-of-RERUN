@@ -18,11 +18,14 @@ var sonicTween:FlxTween;
 
 var camComic:FlxCamera = new FlxCamera();
 
+hudLives = 4;
 
 //function onPlayerHit(e)
 //{
 //    e.note.splash = "pvz";
 //}
+
+importScript("data/scripts/hudv2");
 
 var opponentZoom = 1;
 var playerZoom = 0.5;
