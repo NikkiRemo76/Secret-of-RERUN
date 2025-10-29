@@ -217,7 +217,7 @@ function bgChange(values) {
 }
 
 function sonicFade() {
-	sonicTween = FlxTween.tween(strumLines.members[1].characters[2], {alpha: 1}, 2, {ease: FlxEase.cubeOut, onComplete: function(_){
+	sonicTween = FlxTween.tween(strumLines.members[1].characters[2], {alpha: 1}, 2, {ease: FlxEase.cubeOut, onComplete: function(_) {
     	cloudTween = null;
     }});
 }
