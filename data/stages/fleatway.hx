@@ -43,6 +43,8 @@ function postCreate() {
 	bgChange('1');
 
 	camGame.addShader(colorShader);
+	camHUD.addShader(colorShader);
+	camComic.addShader(colorShader);
 
 	//FlxG.cameras.add(camComic, false);
 	
@@ -118,6 +120,15 @@ function postCreate() {
 	comic.visible = false;
 	comic.antialiasing = true;
     insert(members.indexOf(gf), comic);
+
+	comicTrans = new FlxSprite().loadGraphic(Paths.image('stages/fleatway/comic/transition'));
+    comicTrans.camera = camComic;
+	comicTrans.antialiasing = true;
+	comicTrans.scale.set(0.5,0.5);
+	comicTrans.updateHitbox();
+    comicTrans.screenCenter();
+    insert(members.indexOf(gf), comicTrans);
+	comicTrans.y = FlxG.height;
 }
 
 function bgChange(values) {
@@ -229,6 +240,11 @@ var hueBlock = false;
 var contrastBlock = false;
 var saturationBlock = false;
 
+var allowBright = false;
+
+function allowBrightF(){
+	allowBright = !allowBright;
+}
 function update(elapsed:Float) {
 	if(!brightnessBlock)colorShader.brightness = FlxMath.lerp(colorShader.brightness, 0, 0.05);
 	//if(!hueBlock)colorShader.hue = FlxMath.lerp(colorShader.hue, 0, 0.01);
@@ -240,7 +256,7 @@ function update(elapsed:Float) {
 	});
 }
 function beatHit(curBeat:Int) {
-	if(curBeat % 1 == 0 && !brightnessBlock){
+	if(curBeat % 1 == 0 && !brightnessBlock && allowBright){
         colorShader.brightness += 30;
         //trace('section');
 		//colorShader.contrast = 5000;
@@ -300,6 +316,10 @@ function stepHit(curStep:Int) {
 	switch (curStep) {
 		case 16:
 			camGame.alpha = 1;
+		case 1056:
+			FlxTween.tween(comicTrans, {y: 50}, 2, {ease: FlxEase.cubeOut});
+		case 1088:
+			FlxTween.tween(comicTrans, {y: -720}, 2, {ease: FlxEase.cubeIn});
         case 1416: 
             comic.visible = true;
 			comic1.visible = true;
