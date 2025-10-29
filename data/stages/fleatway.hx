@@ -6,7 +6,7 @@ public var zoomAllow:Bool = true;
 
 introLength = 0;
 
-var colorShader = new CustomShader('adjustColor');
+var colorShader:CustomShader = new CustomShader('adjustColor');
 colorShader.brightness = 0;
 colorShader.hue = 0;
 colorShader.contrast = 0;
@@ -30,14 +30,14 @@ importScript("data/scripts/hudv2");
 var opponentZoom = 1;
 var playerZoom = 0.5;
 
-function onNoteHit(event)
-	event.enableCamZooming = false;
+function onNoteHit(e) e.enableCamZooming = false;
 
 function onCameraMove(_) if(zoomin == null && lastFocused != (lastFocused = curCameraTarget) && zoomAllow)
-    zoomin = FlxTween.tween(FlxG.camera, {zoom: curCameraTarget == 0 ? opponentZoom : playerZoom}, (Conductor.stepCrochet * 14 / 1000), {ease: FlxEase.cubeOut, onComplete: function(_){
+    zoomin = FlxTween.tween(FlxG.camera, {zoom: curCameraTarget == 0 ? opponentZoom : playerZoom}, (Conductor.stepCrochet * 14 / 1000), {ease: FlxEase.cubeOut, onComplete: function(_) {
     	zoomin = null;
     	defaultCamZoom = FlxG.camera.zoom;
     }});
+
 function postCreate() {
 	camGame.alpha = 0;
 	bgChange('1');
@@ -78,8 +78,7 @@ function postCreate() {
 	gradiRender.zoomFactor = 0;
 	insert(members.indexOf(smoke), gradiRender);
 
-	comicbg = new FlxSprite(0,0);
-	comicbg.makeGraphic(1280, 720, FlxColor.WHITE);
+	comicbg = new FlxSprite(0,0).makeGraphic(FlxG.width, FlxG.height, FlxColor.WHITE);
 	comicbg.color = 0xe3c4ca;
     comicbg.scale.set(2, 2);
 	comicbg.camera = camComic;
@@ -217,20 +216,17 @@ function bgChange(values) {
 	}
 }
 
-function sonicFade(){
+function sonicFade() {
 	sonicTween = FlxTween.tween(strumLines.members[1].characters[2], {alpha: 1}, 2, {ease: FlxEase.cubeOut, onComplete: function(_){
     	cloudTween = null;
     }});
 }
 
-function cloudFade(){
-	colorTween = FlxTween.color(strumLines.members[1].characters[2], 2, 0xff000000, 0xffffffff, {ease: FlxEase.cubeOut, 
-		onComplete: function(twn:FlxTween) {
-			colorTween = null;
-		}
-	});
-	cloudTween = FlxTween.tween(cloud, {alpha: 0}, 2, {ease: FlxEase.cubeOut, 
-		onComplete: function(_){
+function cloudFade() {
+	colorTween = FlxTween.color(strumLines.members[1].characters[2], 2, 0xff000000, 0xffffffff, {ease: FlxEase.cubeOut, onComplete: function(_) {
+		colorTween = null;
+	}});
+	cloudTween = FlxTween.tween(cloud, {alpha: 0}, 2, {ease: FlxEase.cubeOut, onComplete: function(_) {
     	cloudTween = null;
     }});
 }
@@ -242,76 +238,86 @@ var saturationBlock = false;
 
 var allowBright = false;
 
-function allowBrightF(){
+function allowBrightF() {
 	allowBright = !allowBright;
 }
-function update(elapsed:Float) {
-	if(!brightnessBlock)colorShader.brightness = FlxMath.lerp(colorShader.brightness, 0, 0.05);
+
+function update() {
+	if (!brightnessBlock) colorShader.brightness = FlxMath.lerp(colorShader.brightness, 0, 0.05);
 	//if(!hueBlock)colorShader.hue = FlxMath.lerp(colorShader.hue, 0, 0.01);
 	//if(!contrastBlock)colorShader.contrast = FlxMath.lerp(colorShader.contrast, 0, 0.01);
 	//if(!saturationBlock)colorShader.saturation = FlxMath.lerp(colorShader.saturation, 0, 0.01);
 
-	strumLines.members[0].notes.forEach(function(n){
-	//	trace(n);
-	});
+	// strumLines.members[0].notes.forEach(function(n){
+	// 	trace(n);
+	// });
 }
+
 function beatHit(curBeat:Int) {
-	if(curBeat % 1 == 0 && !brightnessBlock && allowBright){
+	if (curBeat % 1 == 0 && !brightnessBlock && allowBright) {
         colorShader.brightness += 30;
         //trace('section');
 		//colorShader.contrast = 5000;
     }
 }
+
+// чем гуще лес, if else if else....
 function flashFunc(type:String, int:Int) {
 	var bebe:Int = Std.parseInt(int);
-	if(type == 'b'){
-		colorShader.brightness = bebe;
-	}else if(type == 'h'){
-		colorShader.hue = bebe;
-	}else if(type == 'c'){
-		colorShader.contrast = bebe;
-	}else if(type == 's'){
-		colorShader.saturation = bebe;
+	switch (type) {
+		case 'b':
+			colorShader.brightness = bebe;
+		case 'h':
+			colorShader.hue = bebe;
+		case 'c':
+			colorShader.contrast = bebe;
+		case 's':
+			colorShader.saturation = bebe;
 	}
 }
+
 var brightnessTween:FlxTween;
 var hueTween:FlxTween;
 var contrastTween:FlxTween;
 var saturationTween:FlxTween;
+
 function tweenColor(type:String, int:Int, time:Int){
 	//trace(type, int, time);
 	var bebe:Int = Std.parseInt(int);
 	var tete:Float = Std.parseFloat(time);
-	if(type == 'b'){
-		brightnessBlock = true;
-		if (brightnessTween != null) brightnessTween.cancel();
-		brightnessTween = FlxTween.tween(colorShader, {brightness: bebe},tete, {ease: FlxEase.cubeOut, onComplete: function (twn:FlxTween) {
-			//brightnessTween.cancel();
-			brightnessBlock = false;
-		}});
-	}else if(type == 'h'){
-		hueBlock = true;
-		if (hueTween != null) hueTween.cancel();
-		hueTween = FlxTween.tween(colorShader, {hue: bebe},tete, {ease: FlxEase.cubeOut, onComplete: function (twn:FlxTween) {
-			//hueTween.cancel();
-			hueBlock = false;
-		}});
-	}else if(type == 'c'){
-		contrastBlock = true;
-		if (contrastTween != null) contrastTween.cancel();
-		contrastTween = FlxTween.tween(colorShader, {contrast: bebe},tete, {ease: FlxEase.cubeOut, onComplete: function (twn:FlxTween) {
-			//contrastTween.cancel();
-			contrastBlock = false;
-		}});
-	}else if(type == 's'){
-		saturationBlock = true;
-		if (saturationTween != null) saturationTween.cancel();
-		saturationTween = FlxTween.tween(colorShader, {saturation: bebe},tete, {ease: FlxEase.cubeOut, onComplete: function (twn:FlxTween) {
-			//saturationTween.cancel();
-			saturationBlock = false;
-		}});
+	//лес ещё гуще
+	switch (type) {
+		case 'b':
+			brightnessBlock = true;
+			if (brightnessTween != null) brightnessTween.cancel();
+			brightnessTween = FlxTween.tween(colorShader, {brightness: bebe}, tete, {ease: FlxEase.cubeOut, onComplete: function(_) {
+				//brightnessTween.cancel();
+				brightnessBlock = false;
+			}});
+		case 'h':
+			hueBlock = true;
+			if (hueTween != null) hueTween.cancel();
+			hueTween = FlxTween.tween(colorShader, {hue: bebe}, tete, {ease: FlxEase.cubeOut, onComplete: function(_) {
+				//hueTween.cancel();
+				hueBlock = false;
+			}});
+		case 'c':
+			contrastBlock = true;
+			if (contrastTween != null) contrastTween.cancel();
+			contrastTween = FlxTween.tween(colorShader, {contrast: bebe}, tete, {ease: FlxEase.cubeOut, onComplete: function(_) {
+				//contrastTween.cancel();
+				contrastBlock = false;
+			}});
+		case 's':
+			saturationBlock = true;
+			if (saturationTween != null) saturationTween.cancel();
+			saturationTween = FlxTween.tween(colorShader, {saturation: bebe}, tete, {ease: FlxEase.cubeOut, onComplete: function(_) {
+				//saturationTween.cancel();
+				saturationBlock = false;
+			}});
 	}
 }
+
 function stepHit(curStep:Int) {
 	switch (curStep) {
 		case 16:
@@ -320,30 +326,31 @@ function stepHit(curStep:Int) {
 			FlxTween.tween(comicTrans, {y: 50}, 2, {ease: FlxEase.cubeOut});
 		case 1088:
 			FlxTween.tween(comicTrans, {y: -720}, 2, {ease: FlxEase.cubeIn});
-        case 1416: 
+        case 1416:
             comic.visible = true;
 			comic1.visible = true;
 			comic2.visible = true;
 			comic3.visible = true;
 			comicbg.visible = true;
-			comicbg.setPosition(0,0);
-			comic.setPosition(0,0);
-			comic1.setPosition(0,0);
-			comic2.setPosition(0,0);
-			comic3.setPosition(0,0);
+
+			comicbg.setPosition(0, 0);
+			comic.setPosition(0, 0);
+			comic1.setPosition(0, 0);
+			comic2.setPosition(0, 0);
+			comic3.setPosition(0, 0);
 			comic2.alpha = 0;
 			FlxTween.tween(comic2, {alpha: 1}, 2, {ease: FlxEase.cubeOut});
-			FlxTween.tween(camComic.scroll, {x: 0, y: 100},0.5, {ease: FlxEase.cubeOut});
-		case 1448: 
-			FlxTween.tween(camComic.scroll, {x: 1100, y: 100},0.5, {ease: FlxEase.cubeOut});
-		case 1472: 
-			FlxTween.tween(camComic.scroll, {x: 0, y: 800},0.5, {ease: FlxEase.cubeOut});
-		case 1480: 
-			FlxTween.tween(camComic.scroll, {x: 800, y: 800},0.5, {ease: FlxEase.cubeOut});
-		case 1496: 
-			FlxTween.tween(camComic.scroll, {x: 500, y: 1750},0.5, {ease: FlxEase.cubeOut});
-			FlxTween.tween(camComic, {zoom: 0.6},0.5, {ease: FlxEase.cubeOut});
-		case 1512: 
+			FlxTween.tween(camComic.scroll, {x: 0, y: 100}, 0.5, {ease: FlxEase.cubeOut});
+		case 1448:
+			FlxTween.tween(camComic.scroll, {x: 1100, y: 100}, 0.5, {ease: FlxEase.cubeOut});
+		case 1472:
+			FlxTween.tween(camComic.scroll, {x: 0, y: 800}, 0.5, {ease: FlxEase.cubeOut});
+		case 1480:
+			FlxTween.tween(camComic.scroll, {x: 800, y: 800}, 0.5, {ease: FlxEase.cubeOut});
+		case 1496:
+			FlxTween.tween(camComic.scroll, {x: 500, y: 1750}, 0.5, {ease: FlxEase.cubeOut});
+			FlxTween.tween(camComic, {zoom: 0.6}, 0.5, {ease: FlxEase.cubeOut});
+		case 1512:
 			FlxTween.tween(camComic, {zoom: 5}, 4, {ease: FlxEase.cubeOut});
 			FlxTween.tween(comic1, {alpha: 0}, 0.5, {ease: FlxEase.cubeOut});
 			FlxTween.tween(comic2, {alpha: 0}, 0.5, {ease: FlxEase.cubeOut});
