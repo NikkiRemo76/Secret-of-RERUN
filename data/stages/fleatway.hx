@@ -18,14 +18,15 @@ var sonicTween:FlxTween;
 
 var camComic:FlxCamera = new FlxCamera();
 
-hudLives = 4;
-
 //function onPlayerHit(e)
 //{
 //    e.note.splash = "pvz";
 //}
 
-
+function create() {
+	hudLives = 4;
+	importScript("data/scripts/hudv2");
+}
 
 var opponentZoom = 1;
 var playerZoom = 0.5;
@@ -39,7 +40,6 @@ function onCameraMove(_) if(zoomin == null && lastFocused != (lastFocused = curC
     }});
 
 function postCreate() {
-	importScript("data/scripts/hudv2");
 	camGame.alpha = 0;
 	bgChange('1');
 

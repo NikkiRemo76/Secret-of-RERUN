@@ -2,6 +2,7 @@ import flixel.ui.FlxBar;
 import flixel.text.FlxTextBorderStyle;
 
 var nowLives = hudLives;
+trace(nowLives);
 
 var songName = PlayState.SONG.meta.displayName;
 
