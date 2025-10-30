@@ -1,4 +1,0 @@
-<!DOCTYPE codename-engine-character>
-<character y="380" sprite="stranger/spookykidsdance" flipX="true" isPlayer="true" icon="dance">
-	<anim name="idle" anim="idle" fps="10" loop="true"/>
-</character>

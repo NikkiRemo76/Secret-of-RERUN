@@ -1,8 +1,0 @@
-<!DOCTYPE codename-engine-character>
-<character x="-200" y="-50" sprite="enterprice/majin" scale="0.7" flipX="true" icon="majin">
-	<anim name="idle" anim="majin idle" fps="10" loop="true"/>
-	<anim name="singDOWN" anim="majin down" fps="10"/>
-	<anim name="singRIGHT" anim="majin right" fps="10"/>
-	<anim name="singLEFT" anim="majin left" fps="10"/>
-	<anim name="singUP" anim="majin up" fps="10"/>
-</character>

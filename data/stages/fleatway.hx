@@ -25,7 +25,7 @@ hudLives = 4;
 //    e.note.splash = "pvz";
 //}
 
-importScript("data/scripts/hudv2");
+
 
 var opponentZoom = 1;
 var playerZoom = 0.5;
@@ -39,6 +39,7 @@ function onCameraMove(_) if(zoomin == null && lastFocused != (lastFocused = curC
     }});
 
 function postCreate() {
+	importScript("data/scripts/hudv2");
 	camGame.alpha = 0;
 	bgChange('1');
 
