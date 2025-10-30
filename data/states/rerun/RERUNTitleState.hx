@@ -77,6 +77,16 @@ function create() {
 	add(title);
 	title.visible = false;
 
+	presEnter = new FunkinSprite(0, 0, Paths.image('menus/title/presEnter'));
+	presEnter.addAnim('presEnter','presEnter', 5, false);
+	presEnter.playAnim('presEnter');
+	presEnter.updateHitbox();
+	presEnter.screenCenter();
+	presEnter.y += 250;
+	presEnter.camera = camMenu;
+	add(presEnter);
+	presEnter.visible = false;
+
     vg = new FlxSprite().loadGraphic(Paths.image('menus/vignette'));
 	vg.screenCenter();
     vg.scale.set(1.2, 1.2);
@@ -85,7 +95,7 @@ function create() {
 
 	FlxG.sound.playMusic(Paths.music('menus/MenuIntro'));
 
-	new FlxTimer().start(1.2, (_) -> [
+	new FlxTimer().start(1.05, (_) -> [
         FlxG.sound.playMusic(Paths.music('menus/Menu')),
 		camMenu.flash(0xff0000, 1),
 		canPress = true,
@@ -93,10 +103,12 @@ function create() {
 		camBG.visible = true,
 		bg2.visible = false,
 		intro.visible = false,
+		presEnter.visible = true,
 		new FlxTimer().start(2, (_) -> [
 			FlxTween.tween(title2, {"scale.y": 0.7, "scale.x": 0.7}, 1.5, {ease: FlxEase.backOut}),
 			FlxTween.tween(title2, {alpha: 1}, 1.5, {ease: FlxEase.backOut}),
-			FlxTween.tween(title, {y: 140}, 1.5, {ease: FlxEase.backOut})
+			FlxTween.tween(title, {y: 140}, 1.5, {ease: FlxEase.backOut}),
+			FlxTween.tween(presEnter, {y: presEnter.y + 50}, 1.5, {ease: FlxEase.backOut})
 		])
     ]);
 }
@@ -115,6 +127,7 @@ function update(elapsed:Float) {
 
     if (canPress && controls.ACCEPT) {
 		if (!transitioning){
+			presEnter.playAnim('presEnter');
             transitioning = true;
 			camMenu.flash(0xff0000, 1);
 			CoolUtil.playMenuSFX("1");

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="presEnter.png" width="402" height="323">
+	<SubTexture name="presEnter0000" x="11" y="11" width="380" height="133" frameX="-26" frameY="-29" frameWidth="428" frameHeight="180"/>
+	<SubTexture name="presEnter0001" x="11" y="155" width="375" height="73" frameX="-28" frameY="-56" frameWidth="428" frameHeight="180"/>
+	<SubTexture name="presEnter0002" x="11" y="239" width="372" height="73" frameX="-28" frameY="-54" frameWidth="428" frameHeight="180"/>
+</TextureAtlas>
