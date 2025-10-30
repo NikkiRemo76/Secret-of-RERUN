@@ -1,12 +1,20 @@
 <!DOCTYPE codename-engine-character>
-<character x="-500" y="150" sprite="fleatway/SonicPowerJack" scale="1.4" flipX="true" camx="-50" camy="30" isPlayer="true" icon="osr" color="#1B00FF" noteSkin="NOTE_assets_SRerunsa">
-	<anim name="idle" anim="idle" fps="10"/>
-	<anim name="singDOWN" anim="down0"/>
-	<anim name="singRIGHT" anim="left0"/>
-	<anim name="singLEFT" anim="right0"/>
-	<anim name="singUP" anim="up0"/>
-	<anim name="singDOWNmiss" anim="down_"/>
-	<anim name="singRIGHTmiss" anim="left_"/>
-	<anim name="singLEFTmiss" anim="right_"/>
-	<anim name="singUPmiss" anim="up_"/>
+<character x="-730" icon="osr" camx="350" y="80" camy="10" scale="1.4" color="#1B00FF" isPlayer="true" flipX="true" sprite="fleatway/SonicPowerJack" noteSkin="NOTE_assets_SRerunsa">
+	<anim fps="10" anim="idle" name="idle"/>
+
+	<anim anim="down0" name="singDOWN"/>
+
+	<anim anim="left0" name="singRIGHT"/>
+
+	<anim anim="right0" name="singLEFT"/>
+
+	<anim anim="up0" name="singUP"/>
+
+	<anim anim="down_" name="singDOWNmiss"/>
+
+	<anim anim="left_" name="singRIGHTmiss"/>
+
+	<anim anim="right_" name="singLEFTmiss"/>
+
+	<anim anim="up_" name="singUPmiss"/>
 </character>
