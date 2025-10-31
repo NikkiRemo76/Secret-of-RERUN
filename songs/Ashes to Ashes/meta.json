@@ -1,0 +1,15 @@
+{
+	"opponentModeAllowed": true,
+	"icon": "screembo3",
+	"difficulties": [
+		"",
+		"normal"
+	],
+	"color": "#FF0000",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Ashes to Ashes",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 100
+}

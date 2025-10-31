@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character x="-500" y="-300" sprite="stranger/danger" icon="strangerBeast" color="#03254E">
+	<anim name="idle" anim="idle" fps="10"/>
+	<anim name="singDOWN" anim="down" fps="10"/>
+	<anim name="singRIGHT" anim="right" fps="10"/>
+	<anim name="singLEFT" anim="left"/>
+	<anim name="singUP" anim="up" fps="10"/>
+	<anim name="pre-atackLeft" anim="pre-atackLeft" fps="10"/>
+	<anim name="atackLeft" anim="atackLeft" fps="10"/>
+	<anim name="pre-atackRight" anim="pre-atackRight" fps="10"/>
+	<anim name="atackRight" anim="atackRight" fps="10"/>
+</character>

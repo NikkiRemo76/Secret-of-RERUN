@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="scrimboreal.png">
+<SubTexture name="scrimboreal down0000" x="800" y="955" width="285" height="346" frameX="-135" frameY="-209" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal down0001" x="515" y="955" width="285" height="356" frameX="-131" frameY="-200" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal idle0000" x="624" y="548" width="264" height="394" frameX="-138" frameY="-160" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal idle0001" x="263" y="955" width="252" height="383" frameX="-152" frameY="-171" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal idle0002" x="1332" y="390" width="254" height="387" frameX="-149" frameY="-167" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal idle0003" x="1332" y="0" width="261" height="390" frameX="-141" frameY="-164" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal idle0004" x="1068" y="0" width="264" height="394" frameX="-138" frameY="-160" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal idle0005" x="1068" y="394" width="264" height="394" frameX="-138" frameY="-160" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal left0000" x="0" y="955" width="263" height="388" frameX="-61" frameY="-170" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal left0001" x="364" y="548" width="260" height="395" frameX="-69" frameY="-164" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal right0000" x="685" y="0" width="383" height="413" frameX="-210" frameY="-143" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal right0001" x="0" y="548" width="364" height="407" frameX="-209" frameY="-149" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal up0000" x="0" y="0" width="343" height="548" frameX="-131" frameY="-8" frameWidth="640" frameHeight="602" />
+<SubTexture name="scrimboreal up0001" x="343" y="0" width="342" height="539" frameX="-133" frameY="-17" frameWidth="640" frameHeight="602" />
+</TextureAtlas>

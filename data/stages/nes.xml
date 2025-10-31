@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/nes/" name="nes" zoom="0.9">
+	<sprite antialiasing="false" x="647" sprite="tlbg2" y="384" type="none" scale="8" name="tlbg2"/>
+	<girlfriend/>
+	<dad x="770"/>
+	<boyfriend x="100" flipX="false"/>
+</stage>

@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="-300" y="150" sprite="fidle-ridle/BFFIDLE" antialiasing="false" flipX="true" camx="-150" camy="-100" isPlayer="true" icon="bf" color="#30B0D1">
+	<anim name="idle" anim="idle" fps="10"/>
+	<anim name="singDOWN" anim="down" fps="10"/>
+	<anim name="singRIGHT" anim="left" x="4" fps="10"/>
+	<anim name="singLEFT" anim="right" x="11" fps="10"/>
+	<anim name="singUP" anim="up" x="-5" y="-5" fps="10"/>
+</character>

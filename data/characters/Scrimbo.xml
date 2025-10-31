@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character y="100" sprite="Hide-and-Seek/scrimboreal" icon="Screembo" color="#3010A6">
+	<anim name="idle" anim="scrimboreal idle" fps="10"/>
+	<anim name="singDOWN" anim="scrimboreal down" fps="10"/>
+	<anim name="singRIGHT" anim="scrimboreal right" fps="10"/>
+	<anim name="singLEFT" anim="scrimboreal left" fps="10"/>
+	<anim name="singUP" anim="scrimboreal up" fps="10"/>
+</character>

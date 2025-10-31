@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="monkey.png" width="1146" height="1295">
+	<SubTexture name="ezgif-frame-0000" x="381.5" y="0" width="371.5" height="442" frameX="-45" frameY="-23.5" frameWidth="550" frameHeight="600"/>
+	<SubTexture name="ezgif-frame-0001" x="381.5" y="442" width="371.5" height="441.5" frameX="-45" frameY="-24" frameWidth="550" frameHeight="600"/>
+	<SubTexture name="ezgif-frame-0002" x="0" y="0" width="381.5" height="443" frameX="-41" frameY="-23.5" frameWidth="550" frameHeight="600"/>
+	<SubTexture name="ezgif-frame-0003" x="753" y="0" width="392.5" height="425.5" frameX="-40" frameY="-43" frameWidth="550" frameHeight="600"/>
+	<SubTexture name="ezgif-frame-0004" x="753" y="425.5" width="392" height="425.5" frameX="-40.5" frameY="-42.5" frameWidth="550" frameHeight="600"/>
+	<SubTexture name="ezgif-frame-0005" x="753" y="851" width="389" height="394" frameX="-53.5" frameY="-83" frameWidth="550" frameHeight="600"/>
+	<SubTexture name="ezgif-frame-0006" x="0" y="443" width="380" height="411.5" frameX="-51.5" frameY="-55" frameWidth="550" frameHeight="600"/>
+	<SubTexture name="ezgif-frame-0007" x="0" y="883.5" width="380.5" height="411.5" frameX="-51" frameY="-55" frameWidth="550" frameHeight="600"/>
+</TextureAtlas>

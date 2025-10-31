@@ -1,0 +1,14 @@
+{
+	"opponentModeAllowed": true,
+	"icon": "fleatway",
+	"difficulties": [
+		"normal"
+	],
+	"color": "#FF0000",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Horse Power",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 160
+}

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="majin.png">
+<!-- Spritesheet made by Etonel01, join my EXE Archive server it's pretty cool. -->
+<!-- https://discord.gg/qaAahqvSy4 -->
+<SubTexture name="majin idle0000" x="0" y="0" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0001" x="1007" y="0" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0002" x="2014" y="0" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0003" x="0" y="1023" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0004" x="1007" y="1023" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0005" x="2014" y="1023" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0006" x="3021" y="0" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0007" x="0" y="0" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0008" x="1007" y="0" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0009" x="2014" y="0" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0010" x="0" y="1023" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0011" x="1007" y="1023" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0012" x="2014" y="1023" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin idle0013" x="3021" y="0" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin up0000" x="3021" y="1023" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin up0001" x="0" y="2046" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin down0000" x="1007" y="2046" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin down0001" x="2014" y="2046" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin right0000" x="3021" y="2046" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin right0001" x="4028" y="0" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin left0000" x="4028" y="1023" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+<SubTexture name="majin left0001" x="4028" y="2046" width="1007" height="1023" frameX="0" frameY="0" frameWidth="1007" frameHeight="1023" />
+</TextureAtlas>

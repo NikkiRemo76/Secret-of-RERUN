@@ -1,0 +1,257 @@
+{
+	"events": [],
+	"codenameChart": true,
+	"strumLines": [
+		{
+			"keyCount": 4,
+			"strumScale": 1,
+			"position": "dad",
+			"notes": [
+				{
+					"id": 0,
+					"sLen": 281.25,
+					"time": 2812.5,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 281.25,
+					"time": 2812.5,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 281.25,
+					"time": 2812.5,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 281.25,
+					"time": 2812.5,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 0,
+					"time": 3937.5,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 3937.5,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 3937.5,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 0,
+					"time": 3937.5,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 562.5,
+					"time": 4218.75,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 562.5,
+					"time": 4218.75,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 562.5,
+					"time": 4218.75,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 562.5,
+					"time": 4218.75,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 562.5,
+					"time": 5718.75,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 562.5,
+					"time": 5718.75,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 562.5,
+					"time": 5718.75,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 562.5,
+					"time": 5718.75,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 0,
+					"time": 6750,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 6750,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 6750,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 0,
+					"time": 6750,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 0,
+					"time": 6937.5,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 6937.5,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 6937.5,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 0,
+					"time": 6937.5,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 750,
+					"time": 7500,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 750,
+					"time": 7500,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 750,
+					"time": 7500,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 937.5,
+					"time": 7500,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 187.5,
+					"time": 7968.75,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 187.5,
+					"time": 7968.75,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 187.5,
+					"time": 7968.75,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 375,
+					"time": 7968.75,
+					"type": 0
+				}
+			],
+			"characters": [
+				"fleatway"
+			],
+			"type": 0,
+			"visible": true,
+			"strumSpacing": 1,
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.25,
+			"vocalsSuffix": ""
+		},
+		{
+			"keyCount": 4,
+			"strumScale": 1,
+			"position": "dad",
+			"notes": [],
+			"characters": [
+				"sonicPJ"
+			],
+			"type": 0,
+			"visible": true,
+			"strumSpacing": 1,
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.75,
+			"vocalsSuffix": ""
+		},
+		{
+			"keyCount": 4,
+			"strumScale": 1,
+			"position": "dad",
+			"notes": [],
+			"characters": [
+				"gf"
+			],
+			"type": 0,
+			"visible": false,
+			"strumSpacing": 1,
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.25,
+			"vocalsSuffix": ""
+		}
+	],
+	"scrollSpeed": 2,
+	"chartVersion": "1.6.0",
+	"stage": "fleatway",
+	"noteTypes": []
+}

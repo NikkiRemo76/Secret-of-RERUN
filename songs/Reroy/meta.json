@@ -1,0 +1,14 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "reroy",
+	"difficulties": [
+		"normal"
+	],
+	"color": "#FF5400",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Reroy",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 165
+}
