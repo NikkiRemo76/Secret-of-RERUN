@@ -216,14 +216,14 @@ function create() {
 	//	i.updateHitbox();
 	//}
 
-	var arrowU = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
-	add(arrowU);
-	songarrow.push(arrowU);
-
-	var arrowD = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
-	arrowD.angle = 180;
-	add(arrowD);
-	songarrow.push(arrowD);
+	//var arrowU = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
+	//add(arrowU);
+	//songarrow.push(arrowU);
+//
+	//var arrowD = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
+	//arrowD.angle = 180;
+	//add(arrowD);
+	//songarrow.push(arrowD);
 
 	for (i in songarrow) {
 		i.scale.set(2,2);
@@ -262,19 +262,19 @@ function create() {
 
 		//trace('menus/fp/3d/black/' + songs[i].displayName + 'Freeplay3DBlack');
 
-		var models = new FlxSprite(0, i * 600);
-		if (FunkinSave.getSongHighscore(songs[i], 'normal').score != 0)
-			models.frames = Paths.getSparrowAtlas('menus/fp/3d/' + songs[i].displayName + 'Freeplay3D');
-
-		else
-			models.frames = Paths.getSparrowAtlas('menus/fp/3d/black/' + songs[i].displayName + 'Freeplay3DBlack');
-		
-
-		models.animation.addByPrefix('idle','spin',8);
-		models.animation.play('idle');
-		models.pixelPerfectRender = true; //floombo i stg u better start putting padding on ur spritesheets
-		models.ID = i;
-		modelgrp.add(models);
+		//var models = new FlxSprite(0, i * 600);
+		//if (FunkinSave.getSongHighscore(songs[i], 'normal').score != 0)
+		//	models.frames = Paths.getSparrowAtlas('menus/fp/3d/' + songs[i].displayName + 'Freeplay3D');
+//
+		//else
+		//	models.frames = Paths.getSparrowAtlas('menus/fp/3d/black/' + songs[i].displayName + 'Freeplay3DBlack');
+		//
+//
+		//models.animation.addByPrefix('idle','spin',8);
+		//models.animation.play('idle');
+		//models.pixelPerfectRender = true; //floombo i stg u better start putting padding on ur spritesheets
+		//models.ID = i;
+		//modelgrp.add(models);
 
 		/*var songLowercase:String = Paths.formatToSongPath(songs[curSelected].displayName);
 		var poop:String = Highscore.formatSong(songLowercase, curDifficulty);
@@ -296,35 +296,35 @@ function create() {
     //trace(Options.freeplayLastSong);
     
 
-	songtitle = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/third_'));
-	songtitle2 = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/party2'));
-	songtitle.setGraphicSize(Std.int(600/1.5));
-	songtitle.updateHitbox();
-	songtitle2.setGraphicSize(Std.int(songtitle.width - 50));
-	songtitle2.updateHitbox();
-	songtitle.scrollFactor.set();
-	songtitle2.scrollFactor.set();
-	add(songtitle);
-	add(songtitle2);
-
-	title = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_1'));
-	gear = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_gear'));
-	gear.centerOrigin();
-
-	eyes = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_eyes'));
-	title.scale.set(0.5,0.5);
-	gear.scale.set(0.5,0.5);
-	eyes.scale.set(0.5,0.5);
-	title.updateHitbox();
-	gear.updateHitbox();
-	eyes.updateHitbox();
-
-	title.scrollFactor.set();
-	gear.scrollFactor.set();
-	eyes.scrollFactor.set();
-	add(title);
-	add(gear);
-	add(eyes);
+	// songtitle = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/third_'));
+	// songtitle2 = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/party2'));
+	// songtitle.setGraphicSize(Std.int(600/1.5));
+	// songtitle.updateHitbox();
+	// songtitle2.setGraphicSize(Std.int(songtitle.width - 50));
+	// songtitle2.updateHitbox();
+	// songtitle.scrollFactor.set();
+	// songtitle2.scrollFactor.set();
+	// add(songtitle);
+	// add(songtitle2);
+// 
+	// title = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_1'));
+	// gear = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_gear'));
+	// gear.centerOrigin();
+// 
+	// eyes = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_eyes'));
+	// title.scale.set(0.5,0.5);
+	// gear.scale.set(0.5,0.5);
+	// eyes.scale.set(0.5,0.5);
+	// title.updateHitbox();
+	// gear.updateHitbox();
+	// eyes.updateHitbox();
+// 
+	// title.scrollFactor.set();
+	// gear.scrollFactor.set();
+	// eyes.scrollFactor.set();
+	// add(title);
+	// add(gear);
+	// add(eyes);
 
 	songNamePlaceholder = new FlxText(0,32, 0, "", 30);
 	songNamePlaceholder.setFormat(Paths.font('NiseGenesis.TTF'), 24, FlxColor.WHITE, 'center');
