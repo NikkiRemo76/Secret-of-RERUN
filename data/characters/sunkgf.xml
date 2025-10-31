@@ -1,4 +1,0 @@
-<!DOCTYPE codename-engine-character>
-<character sprite="fidle-ridle/GfSilly" icon="sunkgf">
-	<anim name="idle" anim="idle" fps="10" loop="true"/>
-</character>
