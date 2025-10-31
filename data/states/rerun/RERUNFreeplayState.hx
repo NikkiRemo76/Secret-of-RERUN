@@ -216,20 +216,20 @@ function create() {
 	//	i.updateHitbox();
 	//}
 
-	//var arrowU = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
-	//add(arrowU);
-	//songarrow.push(arrowU);
-//
-	//var arrowD = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
-	//arrowD.angle = 180;
-	//add(arrowD);
-	//songarrow.push(arrowD);
+	// var arrowU = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
+	// add(arrowU);
+	// songarrow.push(arrowU);
 
-	for (i in songarrow) {
-		i.scale.set(2,2);
-		i.updateHitbox();
-		i.x = 250;
-	}
+	// var arrowD = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
+	// arrowD.angle = 180;
+	// add(arrowD);
+	// songarrow.push(arrowD);
+
+	// for (i in songarrow) {
+	// 	i.scale.set(2,2);
+	// 	i.updateHitbox();
+	// 	i.x = 250;
+	// }
 
 	if(curSelected >= songs.length) curSelected = 0;
 	sonicbg.color = songs[curSelected].color;
@@ -262,19 +262,19 @@ function create() {
 
 		//trace('menus/fp/3d/black/' + songs[i].displayName + 'Freeplay3DBlack');
 
-		//var models = new FlxSprite(0, i * 600);
-		//if (FunkinSave.getSongHighscore(songs[i], 'normal').score != 0)
-		//	models.frames = Paths.getSparrowAtlas('menus/fp/3d/' + songs[i].displayName + 'Freeplay3D');
-//
-		//else
-		//	models.frames = Paths.getSparrowAtlas('menus/fp/3d/black/' + songs[i].displayName + 'Freeplay3DBlack');
-		//
-//
-		//models.animation.addByPrefix('idle','spin',8);
-		//models.animation.play('idle');
-		//models.pixelPerfectRender = true; //floombo i stg u better start putting padding on ur spritesheets
-		//models.ID = i;
-		//modelgrp.add(models);
+		// var models = new FlxSprite(0, i * 600);
+		// if (FunkinSave.getSongHighscore(songs[i], 'normal').score != 0)
+		// 	models.frames = Paths.getSparrowAtlas('menus/fp/3d/' + songs[i].displayName + 'Freeplay3D');
+
+		// else
+		// 	models.frames = Paths.getSparrowAtlas('menus/fp/3d/black/' + songs[i].displayName + 'Freeplay3DBlack');
+			
+
+		// models.animation.addByPrefix('idle','spin',8);
+		// models.animation.play('idle');
+		// models.pixelPerfectRender = true; //floombo i stg u better start putting padding on ur spritesheets
+		// models.ID = i;
+		// modelgrp.add(models);
 
 		/*var songLowercase:String = Paths.formatToSongPath(songs[curSelected].displayName);
 		var poop:String = Highscore.formatSong(songLowercase, curDifficulty);
@@ -306,11 +306,11 @@ function create() {
 	// songtitle2.scrollFactor.set();
 	// add(songtitle);
 	// add(songtitle2);
-// 
+
 	// title = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_1'));
 	// gear = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_gear'));
 	// gear.centerOrigin();
-// 
+
 	// eyes = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_eyes'));
 	// title.scale.set(0.5,0.5);
 	// gear.scale.set(0.5,0.5);
@@ -318,7 +318,7 @@ function create() {
 	// title.updateHitbox();
 	// gear.updateHitbox();
 	// eyes.updateHitbox();
-// 
+
 	// title.scrollFactor.set();
 	// gear.scrollFactor.set();
 	// eyes.scrollFactor.set();

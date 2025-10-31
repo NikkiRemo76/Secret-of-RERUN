@@ -1,4 +1,3 @@
-
 import funkin.backend.utils.HttpUtil;
 
 var transitioning:Bool = false;
