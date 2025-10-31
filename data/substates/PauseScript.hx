@@ -9,9 +9,6 @@ import funkin.editors.charter.Charter;
 import flixel.tweens.FlxTween.FlxTweenType;
 
 var pauseCam = new FlxCamera();
-
-var scroll, confirm, cancel, enter:FlxSound;
-
 var blackboxDown = new FlxSprite();
 var blackboxUp = new FlxSprite();
 
@@ -48,12 +45,7 @@ function create(event) {
 	menuItems.push('Exit to menu');
 	menuItems.push('Exit to charter');
 
-	if (menuItems.contains("Exit to charter") && !PlayState.chartingMode)
-			menuItems.remove("Exit to charter");
-
-    confirm = FlxG.sound.load(Paths.sound('rerunMenu/confirmMenu'), .3);
-    cancel = FlxG.sound.load(Paths.sound('rerunMenu/cancelMenu'), .3);
-    scroll = FlxG.sound.load(Paths.sound('rerunMenu/scrollMenu'), .15);
+	if (menuItems.contains("Exit to charter") && !PlayState.chartingMode) menuItems.remove("Exit to charter");
 
 	//pitchSound = FlxG.random.float(-5, 5);
 	//trace(pitchSound);
@@ -153,19 +145,11 @@ var time:Float = 0;
 function update(elapsed) {
 	time += elapsed;
 
-	if(songName == 'Munchiz'){
-
-	chromAbb.amount = aasssasa.x;
-
-	}
+	if	(songName == 'Munchiz') chromAbb.amount = aasssasa.x;
 
 	ntscfilter.uFrame = time;
 	ntsc.iTime = time;
 	heatShader.iTime = time;
-	//var curText = texts[curSelected];
-	//hand.setPosition(curText.x - 30, curText.y + (textaaaaaa.height - hand.height) - 8);
-	//hand.x -= hand.x % 6;
-	//hand.y -= hand.y % 6;
 
 	if (!canDoShit) return;
 	var oldSec = curSelected;
@@ -175,8 +159,7 @@ function update(elapsed) {
 	if (controls.ACCEPT) {
 		var option = menuItems[curSelected];
 
-        if (option == "Exit to menu") cancel.play();
-        else confirm.play();
+        CoolUtil.playMenuSFX("1"); //cancel всё равно не работает там нужно таймер запускать
 
         //FlxTween.tween(Framerate.offset, {y: 0}, .5, {ease: FlxEase.cubeOut});
 		if (option == "Resume" || option == "Restart Song") {
@@ -226,11 +209,9 @@ function selectOption() {
 }
 
 function changeSelection(change){
-	scroll.stop();
-    scroll.play();
-
 	curSelected += change;
 
+	CoolUtil.playMenuSFX("0");
 	if (curSelected < 0) curSelected = menuItems.length - 1;
 	if (curSelected >= menuItems.length) curSelected = 0;
 	//pauseCam.flash(0xff0000, 1);

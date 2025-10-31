@@ -13,7 +13,8 @@ function create() {
 }
 
 function update(elapsed:Float) {
-    if (!transitioning controls.ACCEPT) {
+    if (!transitioning && controls.ACCEPT) {
+        transitioning = true;
 		FlxG.camera.flash(0xff0000, 1);
 		CoolUtil.playMenuSFX("1");
         FlxTween.tween(warn, {alpha: 0}, 1, {ease: FlxEase.backOut});
