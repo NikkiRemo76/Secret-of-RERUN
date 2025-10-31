@@ -1,4 +1,5 @@
 {
+	"bookmarks": [],
 	"events": [
 		{
 			"params": [
@@ -287,6 +288,54 @@
 		},
 		{
 			"params": [
+				true,
+				0.8,
+				"camGame",
+				16,
+				"cube",
+				"InOut",
+				"direct",
+				false
+			],
+			"time": 49500,
+			"name": "Camera Zoom"
+		},
+		{
+			"params": [
+				"40",
+				"Cube",
+				"InOut",
+				"1"
+			],
+			"time": 49500,
+			"name": "Cinematics (Bar)"
+		},
+		{
+			"params": [
+				true,
+				0.5,
+				"camGame",
+				32,
+				"cube",
+				"InOut",
+				"direct",
+				false
+			],
+			"name": "Camera Zoom",
+			"time": 52500
+		},
+		{
+			"params": [
+				"0",
+				"Cube",
+				"InOut",
+				"4"
+			],
+			"name": "Cinematics (Bar)",
+			"time": 52500
+		},
+		{
+			"params": [
 				0,
 				true,
 				4,
@@ -332,6 +381,16 @@
 			],
 			"time": 78000,
 			"name": "HScript Call"
+		},
+		{
+			"params": [
+				"30",
+				"Cube",
+				"InOut",
+				"1.5"
+			],
+			"time": 78000,
+			"name": "Cinematics (Bar)"
 		},
 		{
 			"params": [
@@ -383,13 +442,13 @@
 		},
 		{
 			"params": [
-				false,
-				-1,
-				16,
-				"camGame"
+				"0",
+				"Expo",
+				"InOut",
+				"2.5"
 			],
-			"time": 84750,
-			"name": "Camera Flash"
+			"time": 82500,
+			"name": "Cinematics (Bar)"
 		},
 		{
 			"params": [
@@ -867,10 +926,36 @@
 		},
 		{
 			"params": [
+				"10",
+				"Cube",
+				"InOut",
+				"3.2"
+			],
+			"time": 147750,
+			"name": "Cinematics (Bar)"
+		},
+		{
+			"params": [
 				"cloudFade",
 				""
 			],
 			"time": 150000,
+			"name": "HScript Call"
+		},
+		{
+			"params": [
+				"tweenColor",
+				"h, 500, 0.5"
+			],
+			"name": "HScript Call",
+			"time": 150375
+		},
+		{
+			"params": [
+				"tweenColor",
+				"h, 0, 1"
+			],
+			"time": 150468.75,
 			"name": "HScript Call"
 		},
 		{
@@ -1233,28 +1318,12 @@
 			"name": "Cinematics (Strums)"
 		}
 	],
-	"scrollSpeed": 3.2,
-	"chartVersion": "1.6.0",
-	"meta": {
-		"customValues": {},
-		"color": "#FFAF00",
-		"opponentModeAllowed": false,
-		"difficulties": [
-			"normal"
-		],
-		"icon": "fleatway",
-		"coopAllowed": false,
-		"stepsPerBeat": 4,
-		"displayName": "Powerjack",
-		"needsVoices": true,
-		"beatsPerMeasure": 4,
-		"bpm": 160
-	},
-	"bookmarks": [],
-	"codenameChart": true,
+	"stage": "fleatway",
 	"strumLines": [
 		{
 			"keyCount": 4,
+			"strumScale": 1,
+			"position": "dad",
 			"notes": [
 				{
 					"id": 2,
@@ -8181,27 +8250,23 @@
 					"type": 0
 				}
 			],
-			"position": "dad",
-			"strumScale": 1,
-			"strumSpacing": 1,
-			"visible": true,
-			"type": 0,
 			"characters": [
 				"fleatway",
 				"fwFight",
 				"fwP3"
 			],
+			"type": 0,
+			"visible": true,
+			"strumSpacing": 1,
 			"strumPos": [
 				0,
 				50
 			],
-			"vocalsSuffix": "",
-			"strumLinePos": 0.25
+			"strumLinePos": 0.25,
+			"vocalsSuffix": ""
 		},
 		{
 			"keyCount": 4,
-			"strumScale": 1,
-			"position": "boyfriend",
 			"notes": [
 				{
 					"id": 2,
@@ -13868,33 +13933,37 @@
 					"type": 0
 				}
 			],
+			"position": "boyfriend",
+			"strumScale": 1,
+			"strumSpacing": 1,
+			"visible": true,
+			"type": 1,
 			"characters": [
 				"sonicPJ",
 				"sFight",
 				"sonicp3"
 			],
-			"type": 1,
-			"visible": true,
-			"strumSpacing": 1,
 			"strumPos": [
 				0,
 				50
 			],
-			"strumLinePos": 0.75,
-			"vocalsSuffix": ""
+			"vocalsSuffix": "",
+			"strumLinePos": 0.75
 		},
 		{
 			"keyCount": 4,
-			"position": "girlfriend",
 			"notes": [],
+			"position": "girlfriend",
+			"type": 2,
+			"visible": false,
 			"characters": [
 				"nogf"
-			],
-			"visible": false,
-			"type": 2
+			]
 		}
 	],
-	"stage": "fleatway",
+	"codenameChart": true,
+	"scrollSpeed": 3.2,
+	"chartVersion": "1.6.0",
 	"noteTypes": [
 		"Alt Anim Note",
 		"No Anim Note"
