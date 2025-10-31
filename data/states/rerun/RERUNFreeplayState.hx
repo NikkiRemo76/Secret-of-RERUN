@@ -6,8 +6,6 @@ import funkin.backend.chart.Chart;
 import funkin.savedata.FunkinSave;
 import flixel.FlxObject;
 
-
-
 /**
  * Array containing all of the songs' metadata.
  */
@@ -171,11 +169,11 @@ function create() {
 	frame.updateHitbox();
 	add(frame);
 
-	difficbg = new FlxSprite(0,0).loadGraphic(Paths.image('menus/fp/difficulty_bar2'));
-	difficbg.scale.set(0.4,0.4);
-	difficbg.updateHitbox();
-	difficbg.scrollFactor.set();
-	difficbg.x = frame.x + (frame.width - difficbg.width)/2;
+	// difficbg = new FlxSprite(0,0).loadGraphic(Paths.image('menus/fp/difficulty_bar2'));
+	// difficbg.scale.set(0.4,0.4);
+	// difficbg.updateHitbox();
+	// difficbg.scrollFactor.set();
+	// difficbg.x = frame.x + (frame.width - difficbg.width)/2;
 	//add(difficbg);
 
 	modelgrp = new FlxTypedGroup<FlxSprite>();
@@ -201,13 +199,13 @@ function create() {
 	diffText.scrollFactor.set();
 	//add(diffText);
 
-	var arrowL = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
-	arrowL.angle = -90;
-	//add(arrowL);
-	//difficArrows.push(arrowL);
+	// var arrowL = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
+	// arrowL.angle = -90;
+	// //add(arrowL);
+	// //difficArrows.push(arrowL);
 
-	var arrowR = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
-	arrowR.angle = 90;
+	// var arrowR = new FlxSprite().loadGraphic(Paths.image('menus/fp/arrowD'));
+	// arrowR.angle = 90;
 	//add(arrowR);
 	//difficArrows.push(arrowR);
 
@@ -249,7 +247,7 @@ function create() {
 	//CoolUtil.difficulties = CoolUtil.defaultDifficulties.copy();
 	for (i in 0...songs.length)
 	{
-		var img:FlxSprite = new FlxSprite(75,40);
+		var img:FlxSprite = new FlxSprite(75, 40);
 		if(Assets.exists(Paths.image('menus/fp/art/' + songs[i].displayName))){
 			img.loadGraphic(Paths.image('menus/fp/art/' + songs[i].displayName));
 		}else{
@@ -298,35 +296,35 @@ function create() {
     //trace(Options.freeplayLastSong);
     
 
-	songtitle = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/third_'));
-	songtitle2 = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/party2'));
-	songtitle.setGraphicSize(Std.int(600/1.5));
-	songtitle.updateHitbox();
-	songtitle2.setGraphicSize(Std.int(songtitle.width - 50));
-	songtitle2.updateHitbox();
-	songtitle.scrollFactor.set();
-	songtitle2.scrollFactor.set();
-	add(songtitle);
-	add(songtitle2);
+	// songtitle = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/third_'));
+	// songtitle2 = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/party2'));
+	// songtitle.setGraphicSize(Std.int(600/1.5));
+	// songtitle.updateHitbox();
+	// songtitle2.setGraphicSize(Std.int(songtitle.width - 50));
+	// songtitle2.updateHitbox();
+	// songtitle.scrollFactor.set();
+	// songtitle2.scrollFactor.set();
+	// add(songtitle);
+	// add(songtitle2);
 
-	title = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_1'));
-	gear = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_gear'));
-	gear.centerOrigin();
+	// title = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_1'));
+	// gear = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_gear'));
+	// gear.centerOrigin();
 
-	eyes = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_eyes'));
-	title.scale.set(0.5,0.5);
-	gear.scale.set(0.5,0.5);
-	eyes.scale.set(0.5,0.5);
-	title.updateHitbox();
-	gear.updateHitbox();
-	eyes.updateHitbox();
+	// eyes = new FlxSprite(0,FlxG.height).loadGraphic(Paths.image('menus/fp/names/ep_eyes'));
+	// title.scale.set(0.5,0.5);
+	// gear.scale.set(0.5,0.5);
+	// eyes.scale.set(0.5,0.5);
+	// title.updateHitbox();
+	// gear.updateHitbox();
+	// eyes.updateHitbox();
 
-	title.scrollFactor.set();
-	gear.scrollFactor.set();
-	eyes.scrollFactor.set();
-	add(title);
-	add(gear);
-	add(eyes);
+	// title.scrollFactor.set();
+	// gear.scrollFactor.set();
+	// eyes.scrollFactor.set();
+	// add(title);
+	// add(gear);
+	// add(eyes);
 
 	songNamePlaceholder = new FlxText(0,32, 0, "", 30);
 	songNamePlaceholder.setFormat(Paths.font('NiseGenesis.TTF'), 24, FlxColor.WHITE, 'center');
@@ -341,11 +339,9 @@ function create() {
 	add(powerjackTitle);
 
 	changeSelection(0);
+	FlxTween.tween(redgradient, {alpha: 1}, 2, {ease: FlxEase.cubeOut});
 }
 
-function postCreate() {
-	FlxTween.tween(redgradient, {alpha: 1}, 1, {ease: FlxEase.cubeOut});
-}
 /*function changeSelection(change:Int = 0, playSound:Bool = true)
 {
 	if(playSound) FlxG.sound.play(Paths.sound('rerunMenu/scrollMenu'), 0.4);
@@ -563,6 +559,7 @@ function changeSelection(change:Int = 0, playSound:Bool = true)
 	#end
 	Paths.currentModDirectory = songs[curSelected].folder;
 	PlayState.storyWeek = songs[curSelected].week;
+
 	if (lastsong != songs[curSelected].displayName) { //haha what?
 		trace('wtf');
 	}
@@ -583,11 +580,6 @@ var gear:FlxSprite;
 var tes2 = false;
 
 function songTitleChange(songNameSet){
-	songtitle.visible = false;
-	songtitle2.visible = false;
-	title.visible = false;
-	gear.visible = false;
-	eyes.visible = false;
 	powerjackTitle.visible = false;
 	songNamePlaceholder.visible = false;
 	if(!songNameTween == null){
@@ -595,33 +587,6 @@ function songTitleChange(songNameSet){
 	}
 	
 	switch (songNameSet) {
-		case 'Third Party':
-			songtitle.visible = true;
-			songtitle2.visible = true;
-			songtitle.setPosition(0,FlxG.height);
-			songtitle2.setPosition(0,FlxG.height);
-
-			songNameTween = FlxTween.tween(songtitle, {y: frameheight + 40},0.2, {ease: FlxEase.expoOut});
-			songNameTween = FlxTween.tween(songtitle2, {y: frameheight + 100},0.4, {ease: FlxEase.expoOut});	
-			songtitle.x = framex + (framewth - songtitle.width)/2;
-			songtitle2.x = framex + (framewth - songtitle.width)/2;	
-		case 'Enterprice':
-			title.visible = true;
-			gear.visible = true;
-			eyes.visible = true;
-			title.setPosition(0,FlxG.height);
-			gear.setPosition(0,FlxG.height);
-			gear.centerOrigin();
-
-			eyes.setPosition(0,FlxG.height);
-
-			songNameTween = FlxTween.tween(title, {y: frameheight + 45},0.2, {ease: FlxEase.expoOut});
-			songNameTween = FlxTween.tween(gear, {y: frameheight + 58},0.2, {ease: FlxEase.expoOut});	
-			songNameTween = FlxTween.tween(eyes, {y: frameheight + 58},0.2, {ease: FlxEase.expoOut});	
-
-			title.x = framex + (framewth - title.width)/2;
-			gear.x = framex + (framewth - gear.width)/2 - 200;	
-			eyes.x = framex + (framewth - eyes.width)/2 - 195;
 		case 'Powerjack':
 			powerjackTitle.visible = true;
 			powerjackTitle.setPosition(0,FlxG.height);
@@ -633,8 +598,7 @@ function songTitleChange(songNameSet){
 			songNamePlaceholder.updateHitbox();
 			songNamePlaceholder.setPosition(0,FlxG.height);
 			songNameTween = FlxTween.tween(songNamePlaceholder, {y: frameheight + 100},0.4, {ease: FlxEase.expoOut});
-			songNamePlaceholder.x = framex + (framewth - songNamePlaceholder.width)/2;	
-
+			songNamePlaceholder.x = framex + (framewth - songNamePlaceholder.width)/2;
 	}
 }
 

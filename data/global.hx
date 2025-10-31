@@ -14,6 +14,8 @@ import funkin.backend.MusicBeatTransition;
 import funkin.backend.system.framerate.Framerate;
 import openfl.text.TextFormat;
 import funkin.backend.utils.NativeAPI;
+import funkin.backend.scripting.MultiThreadedScript;
+import funkin.backend.scripting.GlobalScript;
 
 static var windowTitle:String = "";
 
@@ -33,8 +35,6 @@ static var redirectStates:Map<FlxState, String> = [
     //CreditsMain => ""
 ];
 
-
-
 function preStateSwitch()
 {
     for(i in redirectStates.keys()){
@@ -48,9 +48,6 @@ function preStateSwitch()
     window.setIcon(Image.fromBytes(Assets.getBytes(Paths.image('2char'))));
 	window.title = windowTitle;
 }
-
-import funkin.backend.scripting.MultiThreadedScript;
-import funkin.backend.scripting.GlobalScript;
 
 function readSubFolder(folder) {
 	var globalScripts = Paths.getFolderContent(folder).filter((i:String) -> return StringTools.endsWith(i, '.hx'));
@@ -78,8 +75,7 @@ function new() {
 	}
 }
 function postStateSwitch(){
-      Framerate.fpsCounter.fpsNum.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('NiseSegaSonic.TTF')), 18); //default font is consolas, default size is 18
-      Framerate.fpsCounter.fpsLabel.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('NiseSegaSonic.TTF')), 12); //default font is consolas, default size is 12
-
-	  NativeAPI.setDarkMode(true);
+	Framerate.fpsCounter.fpsNum.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('NiseSegaSonic.TTF')), 18); //default font is consolas, default size is 18
+    Framerate.fpsCounter.fpsLabel.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('NiseSegaSonic.TTF')), 12); //default font is consolas, default size is 12
+	NativeAPI.setDarkMode(null, true);
 }
