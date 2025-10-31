@@ -223,6 +223,8 @@ function changeSelection(change){
 	grpMenuShit.forEach(function(spr:FlxSprite)
 	{
 		spr.x = 0;
+		spr.color = 0xFFBBBBBB;
 		grpMenuShit.members[curSelected].x = 30;
+		grpMenuShit.members[curSelected].color = FlxColor.WHITE;
 	});
 }

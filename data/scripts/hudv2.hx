@@ -1,5 +1,3 @@
-import flixel.ui.FlxBar;
-import flixel.text.FlxTextBorderStyle;
 
 var nowLives = hudLives;
 trace(nowLives);
@@ -9,7 +7,7 @@ var songName = PlayState.SONG.meta.displayName;
 var transTime:FlxTimer;
 
 function postCreate(){
-    for(i in [ healthBarBG, scoreTxt, iconP1]) remove(i);
+    for (i in [healthBarBG, scoreTxt, iconP1]) remove(i);
     doIconBop = false;
 
     //rerunBarBG = new FlxSprite(24, 571.5).loadGraphic(Paths.image('game/ui/newHealthBars/'+songName+'/hpframe'));
@@ -43,12 +41,12 @@ function postCreate(){
     healthBarNew.antialiasing = true;
     healthBarMain.antialiasing = true;
 
-    missesTxt.angle -= 10;
-    accuracyTxt.angle -= 10;
-    missesTxt.x = healthBarNew.x;
-    accuracyTxt.x = healthBarNew.x;
-    accuracyTxt.y -= 20;
-    missesTxt.y -= 20;
+    missesTxt.angle -= 15;
+    accuracyTxt.angle -= 15;
+    missesTxt.x = healthBarNew.x + 20;
+    accuracyTxt.x = healthBarNew.x + 20;
+    accuracyTxt.y -= 50;
+    missesTxt.y -= 50;
     //updateIconPositions = null;
     healthBar.visible = false;
 }

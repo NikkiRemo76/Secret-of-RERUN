@@ -16,6 +16,7 @@ function getCharSplashes(c:Character) {
 }
 
 function onNoteCreation(e){
+    e.note.gapFix = 10;
     switch (e.strumLineID) {
         case 0:
             e.noteSprite = getCharNotes(dad);
