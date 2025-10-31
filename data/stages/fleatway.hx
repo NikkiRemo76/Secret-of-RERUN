@@ -23,10 +23,14 @@ var camComic:FlxCamera = new FlxCamera();
 //    e.note.splash = "pvz";
 //}
 
+<<<<<<< HEAD
 function create() {
 	hudLives = 4;
 	importScript("data/scripts/hudv2");
 }
+=======
+importScript("data/scripts/hudv2");
+>>>>>>> parent of 64fd1f3 (чистка ассетов для альфы)
 
 var opponentZoom = 1;
 var playerZoom = 0.5;

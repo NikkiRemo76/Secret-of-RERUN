@@ -1,5 +1,6 @@
 <!DOCTYPE codename-mod-credits>
 <!-- TEMPLATE FOR CUSTOM CREDITS!!! -->
+<<<<<<< HEAD
 <menu name="Secret of Rerun Credits" desc="Credits for Secret of Rerun Credits.">
 	<credit portrait="false" name="Nikita_Sergay" desc="But it all started with a joke...
 		Owner Secret of Rerun, Artist and Charter" icon="omg" size="150" url="https://gamebanana.com/members/3506058"/>
@@ -7,6 +8,11 @@
 		Main coder and tracer" icon="NikkiRemo" size="180" url="https://www.youtube.com/@Ant1C0de"/>
 	<credit portrait="false" name="Yururyu" desc="I'm just here for fun
 		Traced logo anim" icon="sona" size="180" url="https://t.me/notnamspublic"/>
+=======
+<menu name="Secret of Rerun Cretits" desc="Credits for Secret of Rerun Cretits.">
+	<credit portrait="ftruealse" name="NikkiRemo" desc="TwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwisted
+		Main coder and tracer" icon="NikkiRemo" size="140" url="https://www.youtube.com/@Ant1C0de"/>
+>>>>>>> parent of 64fd1f3 (чистка ассетов для альфы)
 	<credit portrait="true" name="nova" desc="hi im nova teheehehe
 		nothing special (code etc.)" icon="nova" size="110" url="https://github.com/novathepurplecord"/>
 	<credit portrait="true" name="Andrewbit" desc="pisya popa chle-
