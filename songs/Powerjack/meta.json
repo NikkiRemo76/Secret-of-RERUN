@@ -1,15 +1,1 @@
-{
-	"customValues": {},
-	"color": "#FF7200",
-	"opponentModeAllowed": false,
-	"difficulties": [
-		"normal"
-	],
-	"icon": "fleatway",
-	"coopAllowed": false,
-	"stepsPerBeat": 4,
-	"displayName": "Powerjack",
-	"needsVoices": true,
-	"beatsPerMeasure": 4,
-	"bpm": 160
-}
+{"customValues":{},"color":"#FF7200","opponentModeAllowed":false,"difficulties":["normal"],"icon":"fleatway","coopAllowed":false,"stepsPerBeat":4,"displayName":"Powerjack","needsVoices":true,"beatsPerMeasure":4,"bpm":160}

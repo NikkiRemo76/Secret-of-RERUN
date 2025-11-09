@@ -1,12 +1,1 @@
-<!DOCTYPE codename-engine-character>
-<character x="100" y="280" sprite="fleatway/sonic1" scale="1.6" flipX="true" camx="-170" camy="-20" isPlayer="true" icon="osr" color="#0011FF">
-	<anim name="idle" anim="Pico fighting stance idle"/>
-	<anim name="singDOWN" anim="pico dodge snap" x="10" y="15"/>
-	<anim name="singDOWN-alt" anim="Pre-Uppercut Pico" x="-10" y="-60"/>
-	<anim name="singRIGHT" anim="Pico Block Hit" x="-100" y="5"/>
-	<anim name="singRIGHT-alt" anim="hit high pico" x="-30" y="20"/>
-	<anim name="singLEFT" anim="Punch High 2 Pico" x="155" y="-20"/>
-	<anim name="singLEFT-alt" anim="fake out pico" x="125" y="5"/>
-	<anim name="singUP" anim="uppercut pico" x="70" y="115"/>
-	<anim name="singUP-alt" anim="uppercut hit pico" x="20" y="15"/>
-</character>
+<!DOCTYPE codename-engine-character><character x="100" y="280" sprite="fleatway/sonic1" scale="1.6" flipX="true" camx="-170" camy="-20" isPlayer="true" icon="osr" color="#0011FF"><anim name="idle" anim="Pico fighting stance idle"/><anim name="singDOWN" anim="pico dodge snap" x="10" y="15"/><anim name="singDOWN-alt" anim="Pre-Uppercut Pico" x="-10" y="-60"/><anim name="singRIGHT" anim="Pico Block Hit" x="-100" y="5"/><anim name="singRIGHT-alt" anim="hit high pico" x="-30" y="20"/><anim name="singLEFT" anim="Punch High 2 Pico" x="155" y="-20"/><anim name="singLEFT-alt" anim="fake out pico" x="125" y="5"/><anim name="singUP" anim="uppercut pico" x="70" y="115"/><anim name="singUP-alt" anim="uppercut hit pico" x="20" y="15"/></character>

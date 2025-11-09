@@ -1,20 +1,33 @@
-<!DOCTYPE codename-mod-credits>
-<!-- TEMPLATE FOR CUSTOM CREDITS!!! -->
-<menu name="Secret of Rerun Credits" desc="Credits for Secret of Rerun Credits.">
-	<credit portrait="false" name="Nikita_Sergay" desc="But it all started with a joke...
-		Owner Secret of Rerun, Artist and Charter" icon="omg" size="150" url="https://gamebanana.com/members/3506058"/>
-	<credit portrait="false" name="NikkiRemo" desc="TwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwisted
-		Main coder and tracer" icon="NikkiRemo" size="180" url="https://www.youtube.com/@Ant1C0de"/>
-	<credit portrait="false" name="Yururyu" desc="I'm just here for fun
-		Traced logo anim" icon="sona" size="180" url="https://t.me/notnamspublic"/>
-	<credit portrait="true" name="nova" desc="hi im nova teheehehe
-		nothing special (code etc.)" icon="nova" size="110" url="https://github.com/novathepurplecord"/>
-	<credit portrait="true" name="Andrewbit" desc="pisya popa chle-
-		moral support, helped with bg (that got scrapped) and also concepter" icon="andrw" size="110" url="https://youtube.com/@andrewbit-h7p?si=NjICqw9QHt2nkx1O"/>
-	<credit portrait="false" name="NoTamato" desc="-Waaaaaa!!!!
-		Artist, animator, musician a bit. Finished all the visuals/animations from the sketches and unfinished songs." icon="nota" size="120" url="https://x.com/NoTamato67"/>
-	<credit portrait="false" name="GameWin" desc="I'VE BEEN PUSHING THESE PAUSE BUTTONS FOR 16 HOURS
-		sketch, artist" icon="gamewin" size="110" url="https://x.com/GAMEWIN65?t=PY9Eee6iAdTJySjSVYkZmQ"/>
-	<credit portrait="true" name="Devoid" desc="Nice to meet you, my name is Devoid. I'm a rather reserved person outside of digital space, but only if you find a way to communicate with me will I be able to speak openly with you.
-		I tested 'Secret of Rerun', looking for information about scrapped, old, unrealesed content from 'Vs Sonic.Exe: RERUN'" icon="devoid" size="110" url="https://github.com/DevoidGetTheHub"/>
-</menu>
+<!DOCTYPE codename-mod-credits><menu name="Secret of Rerun" desc="Credits for Secret of Rerun."><credit portrait="false" name="Nikita_Sergay"
+desc="But it all started with a joke...
+Owner Secret of Rerun, Artist and Charter"
+icon="omg" size="150"
+url="https://gamebanana.com/members/3506058"/><credit portrait="false" name="NikkiRemo"
+desc="TwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwistedTwisted
+Main Coder and Tracer"
+icon="NikkiRemo" size="180"
+url="https://www.youtube.com/@Ant1C0de"/><credit portrait="false" name="Yururyu"
+desc="I'm just here for fun
+Traced logo Anim"
+icon="sona" size="180"
+url="https://t.me/notnamspublic"/><credit portrait="true" name="nova"
+desc="hi im nova teheehehe
+Nothing special (Coder, Tester, Moral Support)"
+icon="nova" size="110"
+url="https://github.com/novathepurplecord"/><credit portrait="true" name="Andrewbit"
+desc="pisya popa chle-
+Moral support, Helped with BG (that got scrapped) and also Concepter"
+icon="andrw" size="110"
+url="https://youtube.com/@andrewbit-h7p?si=NjICqw9QHt2nkx1O"/><credit portrait="false" name="NoTamato"
+desc="-Waaaaaa!!!!
+Artist, Animator, Musician a bit. Finished all the visuals/animations from the sketches and unfinished songs."
+icon="nota" size="120"
+url="https://x.com/NoTamato67"/><credit portrait="false" name="GameWin"
+desc="I'VE BEEN PUSHING THESE PAUSE BUTTONS FOR 16 HOURS
+Sketch, Artist"
+icon="gamewin" size="110"
+url="https://x.com/GAMEWIN65?t=PY9Eee6iAdTJySjSVYkZmQ"/><credit portrait="true" name="Devoid"
+desc="Nice to meet you, my name is Devoid. I'm a rather reserved person outside of digital space, but only if you find a way to communicate with me will I be able to speak openly with you.
+I tested 'Secret of Rerun', looking for information about scrapped, old, unrealesed content from 'Vs Sonic.Exe: RERUN'"
+icon="devoid" size="110"
+url="https://github.com/DevoidGetTheHub"/></menu><menu name="Rerun Mod" desc="Credits for the Original Rerun Mod."><credit portrait="false" name="Finley Rendon" desc="Owner, Director, Composer, Voice Actor (Boyfriend, Anti-Piracy Sonic, Zalgo)" size="150"/><credit portrait="false" name="Muto" desc="Director, Composer, Artist, Animator" size="150"/><credit portrait="false" name="Joey Animations" desc="Director, Composer, Voice Actor (Sonic.EXE, Zalgo)" size="150"/><credit portrait="false" name="RaiGuyyy" desc="Director, Composer, Voice Actor (multiple Sonic.EXE interpretations)" size="150"/><credit portrait="false" name="Lilyko" desc="Director, Artist, Animator" size="150"/><credit portrait="false" name="NightmareXQ" desc="Charter" size="150"/><credit portrait="false" name="Excelline" desc="Charter" size="150"/><credit portrait="false" name="Checkty" desc="Composer" size="150"/><credit portrait="false" name="LongestSoloEver" desc="Composer, Voice Actor (Pico)" size="150"/><credit portrait="false" name="punkett" desc="Composer" size="150"/><credit portrait="false" name="Zomboi" desc="Composer" size="150"/><credit portrait="false" name="Ruby My Dear" desc="Composer" size="150"/><credit portrait="false" name="Igorrr" desc="Composer" size="150"/><credit portrait="false" name="Wishy" desc="Artist, Animator" size="150"/><credit portrait="false" name="Issacshouse2" desc="Artist, Animator" size="150"/><credit portrait="false" name="Senpi" desc="Artist" size="150"/><credit portrait="false" name="zyhe_xyz" desc="Artist" size="150"/><credit portrait="false" name="cl7890" desc="Artist" size="150"/><credit portrait="false" name="Stonesteve" desc="Artist, Animator" size="150"/><credit portrait="false" name="Dazzen" desc="Artist, Animator" size="150"/><credit portrait="false" name="CryptidArts" desc="Artist" size="150"/><credit portrait="false" name="Stephanie Digits" desc="Artist" size="150"/><credit portrait="false" name="Nexodia" desc="Artist, Animator" size="150"/><credit portrait="false" name="Sum" desc="Artist" size="150"/><credit portrait="false" name="Torresmmo" desc="Artist, Animator" size="150"/><credit portrait="false" name="Lin" desc="Artist" size="150"/><credit portrait="false" name="SirLies" desc="Artist" size="150"/><credit portrait="false" name="Satan But Worse" desc="Artist" size="150"/><credit portrait="false" name="Zeurel" desc="Artist, Animator" size="150"/><credit portrait="false" name="Mahmoujh" desc="Artist" size="150"/><credit portrait="false" name="Muto's Mom" desc="Artist (yes, really)" size="150"/><credit portrait="false" name="Floombo" desc="Voice Actor (Somari, Reroy)" size="150"/><credit portrait="false" name="Sr. Pelo" desc="Voice Actor (Skid and Pump)" size="150"/><credit portrait="false" name="Novasaur" desc="Voice Actor (Girlfriend)" size="150"/><credit portrait="false" name="Jacey Amaris" desc="Voice Actor (Super Sonic - Sonic the Comic)" size="150"/><credit portrait="false" name="Tom Kenny" desc="Sunky.MPEG (sampled)" size="150"/><credit portrait="false" name="Mick Lauer" desc="Voice Actor (Tails - Secret Histories)" size="150"/><credit portrait="false" name="Blake Swift" desc="Voice Actor (Sonic - Secret Histories)" size="150"/><credit portrait="false" name="StaleTide" desc="Programmer" size="150"/><credit portrait="false" name="Lunarcleint" desc="Programmer" size="150"/><credit portrait="false" name="Wizard" desc="Programmer" size="150"/></menu>

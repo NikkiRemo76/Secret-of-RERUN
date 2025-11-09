@@ -1,12 +1,1 @@
-<!DOCTYPE codename-engine-character>
-<character icon="fleatway" camx="-180" sprite="fleatway/FLEETWAY3" scale="2.8" camy="250" color="#F3882D">
-	<anim fps="10" anim="idle" name="idle"/>
-
-	<anim fps="15" anim="down" name="singDOWN"/>
-
-	<anim fps="15" anim="right" name="singRIGHT"/>
-
-	<anim fps="15" anim="left" name="singLEFT"/>
-
-	<anim fps="15" anim="up" name="singUP"/>
-</character>
+<!DOCTYPE codename-engine-character><character x="-700" sprite="FLEETWAY3" scale="2.8" camx="500" camy="250" icon="fleatway" color="#F3882D"><anim name="idle" anim="idle" fps="10" loop="true"/><anim name="singDOWN" anim="down" fps="15"/><anim name="singRIGHT" anim="right" fps="15"/><anim name="singLEFT" anim="left" fps="15"/><anim name="singUP" anim="up" fps="15"/></character>

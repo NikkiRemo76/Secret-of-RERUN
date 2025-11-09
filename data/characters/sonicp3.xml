@@ -1,12 +1,1 @@
-<!DOCTYPE codename-engine-character>
-<character x="-140" sprite="fleatway/sonicp3" icon="osr" y="70" scale="0.8" flipX="true" isPlayer="true" color="#FFFFFF">
-	<anim name="idle" anim="idle" fps="10"/>
-
-	<anim x="30" y="10" anim="down" fps="10" name="singDOWN"/>
-
-	<anim x="-10" y="-10" anim="right" fps="10" name="singRIGHT"/>
-
-	<anim x="-10" y="-9" anim="left" fps="10" name="singLEFT"/>
-
-	<anim x="30" y="-20" anim="up" fps="10" name="singUP"/>
-</character>
+<!DOCTYPE codename-engine-character><character x="-140" sprite="fleatway/sonicp3" icon="osr" y="70" scale="0.8" flipX="true" isPlayer="true" color="#FFFFFF"><anim name="idle" anim="idle" fps="10"/><anim x="30" y="10" anim="down" fps="10" name="singDOWN"/><anim x="-10" y="-10" anim="right" fps="10" name="singRIGHT"/><anim x="-10" y="-9" anim="left" fps="10" name="singLEFT"/><anim x="30" y="-20" anim="up" fps="10" name="singUP"/></character>

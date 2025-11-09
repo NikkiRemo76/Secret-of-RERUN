@@ -41,13 +41,14 @@ function postCreate(){
     healthBarNew.antialiasing = true;
     healthBarMain.antialiasing = true;
 
-    missesTxt.angle -= 15;
-    accuracyTxt.angle -= 15;
-    missesTxt.x = healthBarNew.x + 20;
-    accuracyTxt.x = healthBarNew.x + 20;
-    accuracyTxt.y -= 50;
-    missesTxt.y -= 50;
-    //updateIconPositions = null;
+    for (o in [missesTxt, accuracyTxt]) {
+        o.angle -= 20;
+        o.x = healthBarNew.x + 20;
+
+        if (downscroll) o.y -= 95;
+        else o.y -= 70;
+    }
+    
     healthBar.visible = false;
 }
 
@@ -109,7 +110,7 @@ function onPlayerMiss(event:NoteMissEvent) {
 }
 
 function postUpdate(){
-    iconP2.scale.set(lerp(iconP2.scale.x, 0.8, 0.33), lerp(iconP2.scale.y ,0.8, 0.33));
+    iconP2.scale.set(CoolUtil.fpsLerp(iconP2.scale.x, 0.8, 0.33), CoolUtil.fpsLerp(iconP2.scale.y ,0.8, 0.33));
     iconP2.setPosition(healthBarMain.x + 210, healthBarMain.y + 190);
 
     //if(nowLives <= 2){

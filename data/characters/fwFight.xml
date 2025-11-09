@@ -1,12 +1,1 @@
-<!DOCTYPE codename-engine-character>
-<character y="40" sprite="fleatway/character_updated" icon="fleatway" color="#F3882D">
-	<anim name="idle" anim="idle" fps="20"/>
-	<anim name="singDOWN" anim="downdodge" x="55" y="-140"/>
-	<anim name="singDOWN-alt" anim="downpunched" x="-30" y="-110"/>
-	<anim name="singRIGHT" anim="rightpunch0" x="-130" y="-125"/>
-	<anim name="singRIGHT-alt" anim="rightpunched" x="-50" y="-145"/>
-	<anim name="singLEFT" anim="leftpucnh0" x="-150" y="-120"/>
-	<anim name="singLEFT-alt" anim="leftpunched0" x="90" y="-125"/>
-	<anim name="singUP" anim="upunch0" x="-185" y="120"/>
-	<anim name="singUP-alt" anim="uppunched0" x="100" y="-80"/>
-</character>
+<!DOCTYPE codename-engine-character><character y="40" sprite="fleatway/character_updated" icon="fleatway" color="#F3882D"><anim name="idle" anim="idle" fps="20"/><anim name="singDOWN" anim="downdodge" x="55" y="-140"/><anim name="singDOWN-alt" anim="downpunched" x="-30" y="-110"/><anim name="singRIGHT" anim="rightpunch0" x="-130" y="-125"/><anim name="singRIGHT-alt" anim="rightpunched" x="-50" y="-145"/><anim name="singLEFT" anim="leftpucnh0" x="-150" y="-120"/><anim name="singLEFT-alt" anim="leftpunched0" x="90" y="-125"/><anim name="singUP" anim="upunch0" x="-185" y="120"/><anim name="singUP-alt" anim="uppunched0" x="100" y="-80"/></character>

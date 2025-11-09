@@ -18,11 +18,6 @@ var sonicTween:FlxTween;
 
 var camComic:FlxCamera = new FlxCamera();
 
-//function onPlayerHit(e)
-//{
-//    e.note.splash = "pvz";
-//}
-
 function create() {
 	hudLives = 4;
 	importScript("data/scripts/hudv2");
@@ -244,7 +239,7 @@ function allowBrightF() {
 }
 
 function update() {
-	if (!brightnessBlock) colorShader.brightness = FlxMath.lerp(colorShader.brightness, 0, 0.05);
+	if (!brightnessBlock) colorShader.brightness = CoolUtil.fpsLerp(colorShader.brightness, 0, 0.05);
 	//if(!hueBlock)colorShader.hue = FlxMath.lerp(colorShader.hue, 0, 0.01);
 	//if(!contrastBlock)colorShader.contrast = FlxMath.lerp(colorShader.contrast, 0, 0.01);
 	//if(!saturationBlock)colorShader.saturation = FlxMath.lerp(colorShader.saturation, 0, 0.01);
