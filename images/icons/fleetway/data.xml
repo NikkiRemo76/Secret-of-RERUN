@@ -1,0 +1,18 @@
+<!DOCTYPE codename-engine-icon>
+<icon scale="0" facing="right" antialiasing="true" offsetX="0" offsetY="0">
+    <!-- adds an animation for type neutral with the anim idle0 with an y offset of -15 and not moving with fps=0 -->
+    <anim name="neutral" anim="1" looped="false" offsetY="0" fps="0"/>
+
+    <!-- adds a transition from neutral to winning with a fps value of 10 fps and y offset of -15 -->
+    <transition from="neutral" to="winning" anim="trans0" fps="12" offsetY="0"/>
+
+    <!-- this sets the percentage from 0 to the next step (added later) to be specified as a neutral type -->
+    <step percent="0" name="neutral"/>
+
+    <!-- doing the same as before but for winning -->
+    <anim name="winning" anim="4" looped="false" offsetY="0" fps="0"/>
+    <transition from="winning" to="neutral" anim="trans0" fps="12" offsetY="0"/>
+
+    <!-- with this added in combination of the previous step node will make the icon go to its winning state at 80% of health and go back to neutral below that -->
+    <step percent="80" name="winning"/>
+</icon>

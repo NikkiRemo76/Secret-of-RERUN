@@ -22,14 +22,10 @@ var canPress:Bool = false;
 MusicBeatState.skipTransIn = true;
 
 function create() {
-	FlxG.cameras.add(camBG, false);
-	camBG.bgColor = FlxColor.TRANSPARENT;
-
-	FlxG.cameras.add(camCars, false);
-	camCars.bgColor = FlxColor.TRANSPARENT;
-
-    FlxG.cameras.add(camMenu, false);
-	camMenu.bgColor = FlxColor.TRANSPARENT;
+	for (camera in [camBG, camCars, camMenu]) {
+		FlxG.cameras.add(camera, false);
+		camera.bgColor = FlxColor.TRANSPARENT;
+	}
 
     bg = new FlxSprite().makeGraphic(FlxG.width * 3, FlxG.height * 3, 0xff8f0000);
 	bg.screenCenter();
@@ -61,7 +57,6 @@ function create() {
 	add(intro);
 
 	title2 = new FlxSprite().loadGraphic(Paths.image('menus/title/secret of'));
-    //title2.setGraphicSize(1280);
 	title2.scale.set(0.5, 0.5);
 	title2.updateHitbox();
 	title2.screenCenter();
@@ -78,8 +73,7 @@ function create() {
 	title.visible = false;
 
 	presEnter = new FunkinSprite(0, 0, Paths.image('menus/title/presEnter'));
-	presEnter.addAnim('presEnter','presEnter', 5, false);
-	presEnter.playAnim('presEnter');
+	presEnter.addAnim('presEnter', 'presEnter', 5, false);
 	presEnter.updateHitbox();
 	presEnter.screenCenter();
 	presEnter.y += 250;
@@ -104,11 +98,12 @@ function create() {
 		bg2.visible = false,
 		intro.visible = false,
 		presEnter.visible = true,
+		presEnter.playAnim('presEnter'),
 		new FlxTimer().start(2, (_) -> [
 			FlxTween.tween(title2, {"scale.y": 0.7, "scale.x": 0.7}, 1.5, {ease: FlxEase.backOut}),
 			FlxTween.tween(title2, {alpha: 1}, 1.5, {ease: FlxEase.backOut}),
 			FlxTween.tween(title, {y: 140}, 1.5, {ease: FlxEase.backOut}),
-			FlxTween.tween(presEnter, {y: presEnter.y + 50}, 1.5, {ease: FlxEase.backOut})
+			FlxTween.tween(presEnter, {y: presEnter.y + 50}, 1.5, {ease: FlxEase.backOut}),
 		])
     ]);
 }

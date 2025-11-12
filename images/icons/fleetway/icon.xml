@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="fleetway.png" width="278" height="277" spritePadding="3" borderPadding="1">
+	<SubTexture name="1" x="1" y="149" width="131" height="127" frameX="-10" frameY="-10" frameWidth="150" frameHeight="150"/>
+	<SubTexture name="2" x="142" y="142" width="128" height="130" rotated="true" frameX="-10" frameY="-7" frameWidth="150" frameHeight="150"/>
+	<SubTexture name="3" x="1" y="1" width="138" height="145" frameX="-5" frameY="-2" frameWidth="150" frameHeight="150"/>
+	<SubTexture name="4" x="142" y="1" width="135" height="138" frameX="-11" frameY="-6" frameWidth="150" frameHeight="150"/>
+	<SubTexture name="trans00001" x="142" y="142" width="128" height="130" rotated="true" frameX="-10" frameY="-7" frameWidth="150" frameHeight="150"/>
+	<SubTexture name="trans00002" x="1" y="1" width="138" height="145" frameX="-5" frameY="-2" frameWidth="150" frameHeight="150"/>
+	<SubTexture name="trans00003" x="142" y="1" width="135" height="138" frameX="-11" frameY="-6" frameWidth="150" frameHeight="150"/>
+</TextureAtlas>

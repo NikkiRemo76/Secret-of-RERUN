@@ -1,29 +1,24 @@
+var songName:String = PlayState.SONG.meta.displayName;
+var nowLives:Int;
 
-var nowLives = hudLives;
-trace(nowLives);
-
-var songName = PlayState.SONG.meta.displayName;
-
-var transTime:FlxTimer;
-
-function postCreate(){
-    for (i in [healthBarBG, scoreTxt, iconP1]) remove(i);
+function create() {
+    nowLives = hudLives;
+    trace(nowLives);
+}
+function postCreate() {
     doIconBop = false;
-
-    //rerunBarBG = new FlxSprite(24, 571.5).loadGraphic(Paths.image('game/ui/newHealthBars/'+songName+'/hpframe'));
-    //rerunBarBG.camera = camHUD;
-    //rerunBarBG.y -= 75/2;
+    for (o in [healthBarBG, scoreTxt, iconP1, iconP2]) remove(o);
 
     healthBarNew = new FlxSprite(160,FlxG.height * 0.72);
-	healthBarNew.frames = Paths.getSparrowAtlas('game/ui/newHealthBars/'+songName+'/bar');
+	healthBarNew.frames = Paths.getSparrowAtlas('game/ui/newHealthBars/' + songName + '/bar');
     for (bi in 0...hudLives + 1){
-        healthBarNew.animation.addByPrefix('health'+bi+'Trans','health'+bi+'Trans',30, false);
-        healthBarNew.animation.addByPrefix('health'+bi,'health'+bi,30, false);
+        healthBarNew.animation.addByPrefix('health' + bi + 'Trans', 'health' + bi + 'Trans', 30, false);
+        healthBarNew.animation.addByPrefix('health' + bi, 'health' + bi, 30, false);
     }
     healthBarNew.animation.play('health0');
 	healthBarNew.camera = camHUD;
-    healthBarNew.scale.set(0.8,0.8);
-    add(healthBarNew);
+    healthBarNew.scale.set(0.8, 0.8);
+    insert(0, healthBarNew);
 
     healthBarMain = new FlxSprite(healthBarNew.x - 285,healthBarNew.y - 200);
 	healthBarMain.frames = Paths.getSparrowAtlas('game/ui/newHealthBars/'+songName+'/main');
@@ -35,21 +30,23 @@ function postCreate(){
     healthBarMain.animation.play('Normal');
 	healthBarMain.camera = camHUD;
     healthBarMain.scale.set(0.8,0.8);
-    add(healthBarMain);
-    add(healthBarMain);
+    insert(members.indexOf(healthBarNew) + 1, healthBarMain);
+    insert(members.indexOf(healthBarMain) + 1, iconP2);
 
     healthBarNew.antialiasing = true;
     healthBarMain.antialiasing = true;
+    healthBar.visible = false;
 
     for (o in [missesTxt, accuracyTxt]) {
+        remove(o);
+        insert(members.indexOf(healthBarMain) + 1, o);
+
         o.angle -= 20;
         o.x = healthBarNew.x + 20;
 
         if (downscroll) o.y -= 95;
         else o.y -= 70;
     }
-    
-    healthBar.visible = false;
 }
 
 var preStart = true;
@@ -71,9 +68,9 @@ function update(elapsed:Float) {
     healthBarMain.alpha = healthBarBG.alpha;
     healthBarNew.alpha = healthBarBG.alpha;
     if(nowLives >= 2){
-        health = 1;
-    }else if(nowLives <= 3 && nowLives >= 1){
         health = 2;
+    }else if(nowLives <= 3 && nowLives >= 1){
+        health = 0.3;
     }else {
         health = 0;
     }
@@ -110,14 +107,14 @@ function onPlayerMiss(event:NoteMissEvent) {
 }
 
 function postUpdate(){
-    iconP2.scale.set(CoolUtil.fpsLerp(iconP2.scale.x, 0.8, 0.33), CoolUtil.fpsLerp(iconP2.scale.y ,0.8, 0.33));
-    iconP2.setPosition(healthBarMain.x + 210, healthBarMain.y + 190);
+    iconP2.scale.set(CoolUtil.fpsLerp(iconP2.scale.x, 0.85, 0.33), CoolUtil.fpsLerp(iconP2.scale.y , 0.85, 0.33));
+    iconP2.setPosition(healthBarMain.x + 285, healthBarMain.y + 270);
 
     //if(nowLives <= 2){
     //    iconP2.health = 1;
     //}
 }
 
-function onDadHit() iconP2.scale.set(0.9, 0.9);
+function onDadHit() iconP2.scale.set(0.95, 0.95);
 
-function beatHit() iconP2.scale.set(1, 1);
+function beatHit() iconP2.scale.set(1.05, 1.05);
